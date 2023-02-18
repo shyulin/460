@@ -15,3 +15,5 @@ const user4 = ["deliveries"][3]["confirmation_number"]
 const distance4 = ["deliveries"][3]["distance"]
 const user5 = ["deliveries"][4]["confirmation_number"]
 const distance5 = ["deliveries"][4]["distance"]
+
+ $notify("user1", "distance1", "‼️");
