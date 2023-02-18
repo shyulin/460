@@ -1,0 +1,17 @@
+
+/* confirmation_number 英文編號 
+   distance 距離 (越少越短)
+
+*/
+   
+
+const user1 = ["deliveries"][0]["confirmation_number"]
+const distance1 = ["deliveries"][0]["distance"]
+const user2 = ["deliveries"][1]["confirmation_number"]
+const distance2 = ["deliveries"][1]["distance"]
+const user3 = ["deliveries"][2]["confirmation_number"]
+const distance3 = ["deliveries"][2]["distance"]
+const user4 = ["deliveries"][3]["confirmation_number"]
+const distance4 = ["deliveries"][3]["distance"]
+const user5 = ["deliveries"][4]["confirmation_number"]
+const distance5 = ["deliveries"][4]["distance"]
