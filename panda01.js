@@ -1,4 +1,4 @@
-/*  code
+/* 
 [rewrite_local]
 ^https:\/\/tw\.usehurrier\.com\/api\/mobile\/v2\/state\/999999999*\?source\=Delivery\&update\_trigger\=pull\_down\_gesture url script-response-body https://raw.githubusercontent.com/shyulin/460/master/panda01.js
 [mitm]
