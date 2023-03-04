@@ -25,20 +25,12 @@ if (no === 1 ) {
         const pn1 = obj.route.deliveries[0].phone_number ;
         const items1 = obj.route.deliveries[0].items.length ;
         const total1 = obj.route.deliveries[0].total /100 ;
-//      const total1 = obj.route.deliveries[0].total ;
-//        const da1 = obj.route.deliveries[0].dropoff_address ;
-//        const id1 = obj.route.addresses[1].id ;
+
         const add1 = obj.route.addresses[1].address_line_1 ;
         const si1 = obj.route.addresses[1].special_instructions ;
 
         const user1 = `[${status1}] 距離:${distance1}\n${cn1} (${von1}) ${name1}(${pn1}) 小費:${tip1}\n收:${cash1} (${spa1})取 (${items1})項$${total1}\n地址:${add1}\nPS:${si1}\n=====` ;
-//        const user1 = `${cn1}(${von1})${name1}${cash1}\n${status1}小費:${tip1}距離:${distance1}\n${da1}取餐:${spa1}\n${id1}${add1}\n${si1}` ;
-/*      確認號(訂單號)姓名 取款 
-        派單形式 小費 距離
-        取餐ID 轉單時間
-        地址ID 地址
-        備註
-*/
+
         $notify( no + "單" , "" , user1);
 
 } else if (no === 2 ) {
@@ -56,8 +48,6 @@ if (no === 1 ) {
         const items1 = obj.route.deliveries[0].items.length ;
         const total1 = obj.route.deliveries[0].total /100 ;
 
-  //      const da1 = obj.route.deliveries[0].dropoff_address ;
-  //      const id1 = obj.route.addresses[2].id ;
         const add1 = obj.route.addresses[2].address_line_1 ;
         const si1 = obj.route.addresses[2].special_instructions ;
 
@@ -74,8 +64,6 @@ if (no === 1 ) {
         const items2 = obj.route.deliveries[1].items.length ;
         const total2 = obj.route.deliveries[1].total /100 ;
 
- //       const da2 = obj.route.deliveries[1].dropoff_address ;
- //       const id2 = obj.route.addresses[3].id ;
         const add2 = obj.route.addresses[3].address_line_1 ;
         const si2 = obj.route.addresses[3].special_instructions ;
 
@@ -99,8 +87,6 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const items1 = obj.route.deliveries[0].items.length ;
         const total1 = obj.route.deliveries[0].total /100 ;
 
-//        const da1 = obj.route.deliveries[0].dropoff_address ;
-//        const id1 = obj.route.addresses[3].id ;
         const add1 = obj.route.addresses[3].address_line_1 ;
         const si1 = obj.route.addresses[3].special_instructions ;
 
@@ -117,8 +103,6 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const items2 = obj.route.deliveries[1].items.length ;
         const total2 = obj.route.deliveries[1].total /100 ;
 
-//        const da2 = obj.route.deliveries[1].dropoff_address ;
-//        const id2 = obj.route.addresses[4].id ;
         const add2 = obj.route.addresses[4].address_line_1 ;
         const si2 = obj.route.addresses[4].special_instructions ;
 
@@ -135,8 +119,6 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const items3 = obj.route.deliveries[2].items.length ;
         const total3 = obj.route.deliveries[2].total /100 ;
 
-//        const da3 = obj.route.deliveries[2].dropoff_address ;
-//        const id3 = obj.route.addresses[5].id ;
         const add3 = obj.route.addresses[5].address_line_1 ;
         const si3 = obj.route.addresses[5].special_instructions ;
 
