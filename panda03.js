@@ -4,7 +4,7 @@
 [mitm]
 hostname = tw.usehurrier.com
 
-
+const zip1 = obj.route.addresses[1].zip ;
 */
 
 var body = $response.body;
@@ -27,9 +27,10 @@ if (no === 1 ) {
         const vendor1 = obj.route.deliveries[0].vendor.name ;
 
         const add1 = obj.route.addresses[1].address_line_1 ;
+        const zip1 = obj.route.addresses[1].zip ;
         const si1 = obj.route.addresses[1].special_instructions ;
 
-        const user1 = `[${no}:1] ${cn1} (${von1}) ${distance1}\n${name1}(${pn1}) 小費:${tip1}\n＄:${cash1} ${vendor1}(${spa1}) (${items1})項$${total1}\n地址:${add1}\nPS:${si1}\n=====` ;
+        const user1 = `[${no}:1] ${cn1} (${von1}) ${distance1}\n${name1}(${pn1}) 小費:${tip1}\n＄:${cash1} ${vendor1}(${spa1}) (${items1})項$${total1}\n地址:(${zip1})${add1}\nPS:${si1}\n=====` ;
 
         $notify( no + "單" , "" , user1);
 
@@ -49,6 +50,7 @@ if (no === 1 ) {
         const vendor1 = obj.route.deliveries[0].vendor.name ;
 
         const add1 = obj.route.addresses[2].address_line_1 ;
+        const zip1 = obj.route.addresses[2].zip ;
         const si1 = obj.route.addresses[2].special_instructions ;
 
         const cn2 = obj.route.deliveries[1].confirmation_number ;
@@ -65,10 +67,11 @@ if (no === 1 ) {
         const vendor2 = obj.route.deliveries[1].vendor.name ;
 
         const add2 = obj.route.addresses[3].address_line_1 ;
+        const zip2 = obj.route.addresses[3].zip ;
         const si2 = obj.route.addresses[3].special_instructions ;
 
-        const user1 = `[${no}:1] ${cn1} (${von1}) ${distance1}\n${name1}(${pn1}) 小費:${tip1}\n＄:${cash1} ${vendor1}(${spa1}) (${items1})項$${total1}\n地址:${add1}\nPS:${si1}\n=====` ;
-        const user2 = `[${no}:2] ${cn2} (${von2}) ${distance2}\n${name2}(${pn2}) 小費:${tip2}\n＄:${cash2} ${vendor2}(${spa2}) (${items2})項$${total2}\n地址:${add2}\nPS:${si2}\n=====` ;
+        const user1 = `[${no}:1] ${cn1} (${von1}) ${distance1}\n${name1}(${pn1}) 小費:${tip1}\n＄:${cash1} ${vendor1}(${spa1}) (${items1})項$${total1}\n地址:(${zip1})${add1}\nPS:${si1}\n=====` ;
+        const user2 = `[${no}:2] ${cn2} (${von2}) ${distance2}\n${name2}(${pn2}) 小費:${tip2}\n＄:${cash2} ${vendor2}(${spa2}) (${items2})項$${total2}\n地址:(${zip2})${add2}\nPS:${si2}\n=====` ;
 
 
         $notify( no + "單" , "" , user1 +"\n" +user2);
@@ -88,6 +91,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const vendor1 = obj.route.deliveries[0].vendor.name ;
 
         const add1 = obj.route.addresses[3].address_line_1 ;
+        const zip1 = obj.route.addresses[3].zip ;
         const si1 = obj.route.addresses[3].special_instructions ;
 
         const cn2 = obj.route.deliveries[1].confirmation_number ;
@@ -104,6 +108,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const vendor2 = obj.route.deliveries[1].vendor.name ;
 
         const add2 = obj.route.addresses[4].address_line_1 ;
+        const zip2 = obj.route.addresses[4].zip ;
         const si2 = obj.route.addresses[4].special_instructions ;
 
         const cn3 = obj.route.deliveries[2].confirmation_number ;
@@ -120,11 +125,12 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const vendor3 = obj.route.deliveries[2].vendor.name ;
 
         const add3 = obj.route.addresses[5].address_line_1 ;
+        const zip3 = obj.route.addresses[5].zip ;
         const si3 = obj.route.addresses[5].special_instructions ;
 
-        const user1 = `[${no}:1] ${cn1} (${von1}) ${distance1}\n${name1}(${pn1}) 小費:${tip1}\n＄:${cash1} ${vendor1}(${spa1}) (${items1})項$${total1}\n地址:${add1}\nPS:${si1}\n=====` ;
-        const user2 = `[${no}:2] ${cn2} (${von2}) ${distance2}\n${name2}(${pn2}) 小費:${tip2}\n＄:${cash2} ${vendor2}(${spa2}) (${items2})項$${total2}\n地址:${add2}\nPS:${si2}\n=====` ;
-        const user3 = `[${no}:3] ${cn3} (${von3}) ${distance3}\n${name3}(${pn3}) 小費:${tip3}\n＄:${cash3} ${vendor3}(${spa3}) (${items3})項$${total3}\n地址:${add3}\nPS:${si3}\n=====` ;
+        const user1 = `[${no}:1] ${cn1} (${von1}) ${distance1}\n${name1}(${pn1}) 小費:${tip1}\n＄:${cash1} ${vendor1}(${spa1}) (${items1})項$${total1}\n地址:(${zip1})${add1}\nPS:${si1}\n=====` ;
+        const user2 = `[${no}:2] ${cn2} (${von2}) ${distance2}\n${name2}(${pn2}) 小費:${tip2}\n＄:${cash2} ${vendor2}(${spa2}) (${items2})項$${total2}\n地址:(${zip2})${add2}\nPS:${si2}\n=====` ;
+        const user3 = `[${no}:3] ${cn3} (${von3}) ${distance3}\n${name3}(${pn3}) 小費:${tip3}\n＄:${cash3} ${vendor3}(${spa3}) (${items3})項$${total3}\n地址:(${zip3})${add3}\nPS:${si3}\n=====` ;
 
 
 
@@ -145,6 +151,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
                 const vendor1 = obj.route.deliveries[0].vendor.name ;
 
                 const add1 = obj.route.addresses[4].address_line_1 ;
+                const zip1 = obj.route.addresses[4].zip ;
                 const si1 = obj.route.addresses[4].special_instructions ;
         
                 const cn2 = obj.route.deliveries[1].confirmation_number ;
@@ -162,6 +169,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
                 const vendor2 = obj.route.deliveries[1].vendor.name ;
 
                 const add2 = obj.route.addresses[5].address_line_1 ;
+                const zip2 = obj.route.addresses[5].zip ;
                 const si2 = obj.route.addresses[5].special_instructions ;
         
                 const cn3 = obj.route.deliveries[2].confirmation_number ;
@@ -179,6 +187,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
                 const vendor3 = obj.route.deliveries[2].vendor.name ;
 
                 const add3 = obj.route.addresses[6].address_line_1 ;
+                const zip3 = obj.route.addresses[6].zip ;
                 const si3 = obj.route.addresses[6].special_instructions ;
 
                 const cn4 = obj.route.deliveries[3].confirmation_number ;
@@ -196,12 +205,13 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
                 const vendor4 = obj.route.deliveries[3].vendor.name ;
 
                 const add4 = obj.route.addresses[7].address_line_1 ;
+                const zip4 = obj.route.addresses[7].zip ;
                 const si4 = obj.route.addresses[7].special_instructions ;
         
-                const user1 = `[${no}:1] ${cn1} (${von1}) ${distance1}\n${name1}(${pn1}) 小費:${tip1}\n＄:${cash1} ${vendor1}(${spa1}) (${items1})項$${total1}\n地址:${add1}\nPS:${si1}\n=====` ;
-                const user2 = `[${no}:2] ${cn2} (${von2}) ${distance2}\n${name2}(${pn2}) 小費:${tip2}\n＄:${cash2} ${vendor2}(${spa2}) (${items2})項$${total2}\n地址:${add2}\nPS:${si2}\n=====` ;
-                const user3 = `[${no}:3] ${cn3} (${von3}) ${distance3}\n${name3}(${pn3}) 小費:${tip3}\n＄:${cash3} ${vendor3}(${spa3}) (${items3})項$${total3}\n地址:${add3}\nPS:${si3}\n=====` ;
-                const user4 = `[${no}:4] ${cn4} (${von4}) ${distance4}\n${name4}(${pn4}) 小費:${tip4}\n＄:${cash4} ${vendor4}(${spa4}) (${items4})項$${total4}\n地址:${add4}\nPS:${si4}\n=====` ;
+                const user1 = `[${no}:1] ${cn1} (${von1}) ${distance1}\n${name1}(${pn1}) 小費:${tip1}\n＄:${cash1} ${vendor1}(${spa1}) (${items1})項$${total1}\n地址:(${zip1})${add1}\nPS:${si1}\n=====` ;
+                const user2 = `[${no}:2] ${cn2} (${von2}) ${distance2}\n${name2}(${pn2}) 小費:${tip2}\n＄:${cash2} ${vendor2}(${spa2}) (${items2})項$${total2}\n地址:(${zip2})${add2}\nPS:${si2}\n=====` ;
+                const user3 = `[${no}:3] ${cn3} (${von3}) ${distance3}\n${name3}(${pn3}) 小費:${tip3}\n＄:${cash3} ${vendor3}(${spa3}) (${items3})項$${total3}\n地址:(${zip3})${add3}\nPS:${si3}\n=====` ;
+                const user4 = `[${no}:4] ${cn4} (${von4}) ${distance4}\n${name4}(${pn4}) 小費:${tip4}\n＄:${cash4} ${vendor4}(${spa4}) (${items4})項$${total4}\n地址:(${zip4})${add4}\nPS:${si4}\n=====` ;
         
         
         
@@ -222,6 +232,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
                 const vendor1 = obj.route.deliveries[0].vendor.name ;
 
                 const add1 = obj.route.addresses[5].address_line_1 ;
+                const zip1 = obj.route.addresses[5].zip ;
                 const si1 = obj.route.addresses[5].special_instructions ;
         
                 const cn2 = obj.route.deliveries[1].confirmation_number ;
@@ -239,6 +250,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
                 const vendor2 = obj.route.deliveries[1].vendor.name ;
 
                 const add2 = obj.route.addresses[6].address_line_1 ;
+                const zip2 = obj.route.addresses[6].zip ;
                 const si2 = obj.route.addresses[6].special_instructions ;
         
                 const cn3 = obj.route.deliveries[2].confirmation_number ;
@@ -256,6 +268,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
                 const vendor3 = obj.route.deliveries[2].vendor.name ;
 
                 const add3 = obj.route.addresses[7].address_line_1 ;
+                const zip3 = obj.route.addresses[7].zip ;
                 const si3 = obj.route.addresses[7].special_instructions ;
 
                 const cn4 = obj.route.deliveries[3].confirmation_number ;
@@ -273,6 +286,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
                 const vendor4 = obj.route.deliveries[3].vendor.name ;
 
                 const add4 = obj.route.addresses[8].address_line_1 ;
+                const zip4 = obj.route.addresses[8].zip ;
                 const si4 = obj.route.addresses[8].special_instructions ;
 
                 const cn5 = obj.route.deliveries[4].confirmation_number ;
@@ -290,13 +304,14 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
                 const vendor5 = obj.route.deliveries[4].vendor.name ;
 
                 const add5 = obj.route.addresses[9].address_line_1 ;
+                const zip5 = obj.route.addresses[9].zip ;
                 const si5 = obj.route.addresses[9].special_instructions ;
         
-                const user1 = `[${no}:1] ${cn1} (${von1}) ${distance1}\n${name1}(${pn1}) 小費:${tip1}\n＄:${cash1} ${vendor1}(${spa1}) (${items1})項$${total1}\n地址:${add1}\nPS:${si1}\n=====` ;
-                const user2 = `[${no}:2] ${cn2} (${von2}) ${distance2}\n${name2}(${pn2}) 小費:${tip2}\n＄:${cash2} ${vendor2}(${spa2}) (${items2})項$${total2}\n地址:${add2}\nPS:${si2}\n=====` ;
-                const user3 = `[${no}:3] ${cn3} (${von3}) ${distance3}\n${name3}(${pn3}) 小費:${tip3}\n＄:${cash3} ${vendor3}(${spa3}) (${items3})項$${total3}\n地址:${add3}\nPS:${si3}\n=====` ;
-                const user4 = `[${no}:4] ${cn4} (${von4}) ${distance4}\n${name4}(${pn4}) 小費:${tip4}\n＄:${cash4} ${vendor4}(${spa4}) (${items4})項$${total4}\n地址:${add4}\nPS:${si4}\n=====` ;
-                const user5 = `[${no}:5] ${cn5} (${von5}) ${distance5}\n${name5}(${pn5}) 小費:${tip5}\n＄:${cash5} ${vendor5}(${spa5}) (${items5})項$${total5}\n地址:${add5}\nPS:${si5}\n=====` ;
+                const user1 = `[${no}:1] ${cn1} (${von1}) ${distance1}\n${name1}(${pn1}) 小費:${tip1}\n＄:${cash1} ${vendor1}(${spa1}) (${items1})項$${total1}\n地址:(${zip1})${add1}\nPS:${si1}\n=====` ;
+                const user2 = `[${no}:2] ${cn2} (${von2}) ${distance2}\n${name2}(${pn2}) 小費:${tip2}\n＄:${cash2} ${vendor2}(${spa2}) (${items2})項$${total2}\n地址:(${zip2})${add2}\nPS:${si2}\n=====` ;
+                const user3 = `[${no}:3] ${cn3} (${von3}) ${distance3}\n${name3}(${pn3}) 小費:${tip3}\n＄:${cash3} ${vendor3}(${spa3}) (${items3})項$${total3}\n地址:(${zip3})${add3}\nPS:${si3}\n=====` ;
+                const user4 = `[${no}:4] ${cn4} (${von4}) ${distance4}\n${name4}(${pn4}) 小費:${tip4}\n＄:${cash4} ${vendor4}(${spa4}) (${items4})項$${total4}\n地址:(${zip4})${add4}\nPS:${si4}\n=====` ;
+                const user5 = `[${no}:5] ${cn5} (${von5}) ${distance5}\n${name5}(${pn5}) 小費:${tip5}\n＄:${cash5} ${vendor5}(${spa5}) (${items5})項$${total5}\n地址:(${zip5})${add5}\nPS:${si5}\n=====` ;
         
                 $notify( no + "單" , "" , user1 +"\n" +user2 +"\n" +user3 +"\n" +user4 +"\n" +user5);
 }
