@@ -5,12 +5,14 @@
 hostname = tw.usehurrier.com
 
 const zip1 = obj.route.addresses[1].zip ;
+const Dmode = obj.route.courier.dispatching_mode ;
 */
 
 var body = $response.body;
 var obj = JSON.parse(body);
 
 var no = obj.route.deliveries.length ;
+var dmode = obj.route.courier.dispatching_mode ;
 
 if (no === 1 ) {
         const cn1 = obj.route.deliveries[0].confirmation_number ;
@@ -32,7 +34,7 @@ if (no === 1 ) {
 
         const user1 = `[${no}:1] ${cn1} (${von1}) ${distance1}\n${name1}(${pn1}) 小費:${tip1}\n＄:${cash1} ${vendor1}(${spa1}) (${items1})項$${total1}\n地址:(${zip1})${add1}\nPS:${si1}\n=====` ;
 
-        $notify( no + "單" , "" , user1);
+        $notify( no + "單" , dmode , user1);
 
 } else if (no === 2 ) {
 
@@ -74,7 +76,7 @@ if (no === 1 ) {
         const user2 = `[${no}:2] ${cn2} (${von2}) ${distance2}\n${name2}(${pn2}) 小費:${tip2}\n＄:${cash2} ${vendor2}(${spa2}) (${items2})項$${total2}\n地址:(${zip2})${add2}\nPS:${si2}\n=====` ;
 
 
-        $notify( no + "單" , "" , user1 +"\n" +user2);
+        $notify( no + "單" , dmode , user1 +"\n" +user2);
 
 } else if (no === 3 ) {
 const cn1 = obj.route.deliveries[0].confirmation_number ;
@@ -134,7 +136,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
 
 
 
-        $notify( no + "單" , "" , user1 +"\n" +user2 +"\n" +user3);
+        $notify( no + "單" , dmode , user1 +"\n" +user2 +"\n" +user3);
 } else if (no === 4 ) {
                 const cn1 = obj.route.deliveries[0].confirmation_number ;
                 const von1 = obj.route.deliveries[0].vendor_order_number ;
@@ -215,7 +217,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         
         
         
-                $notify( no + "單" , "" , user1 +"\n" +user2 +"\n" +user3 +"\n" +user4);
+                $notify( no + "單" , dmode , user1 +"\n" +user2 +"\n" +user3 +"\n" +user4);
 } else if (no === 5 ) {
                 const cn1 = obj.route.deliveries[0].confirmation_number ;
                 const von1 = obj.route.deliveries[0].vendor_order_number ;
@@ -313,6 +315,6 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
                 const user4 = `[${no}:4] ${cn4} (${von4}) ${distance4}\n${name4}(${pn4}) 小費:${tip4}\n＄:${cash4} ${vendor4}(${spa4}) (${items4})項$${total4}\n地址:(${zip4})${add4}\nPS:${si4}\n=====` ;
                 const user5 = `[${no}:5] ${cn5} (${von5}) ${distance5}\n${name5}(${pn5}) 小費:${tip5}\n＄:${cash5} ${vendor5}(${spa5}) (${items5})項$${total5}\n地址:(${zip5})${add5}\nPS:${si5}\n=====` ;
         
-                $notify( no + "單" , "" , user1 +"\n" +user2 +"\n" +user3 +"\n" +user4 +"\n" +user5);
+                $notify( no + "單" , dmode , user1 +"\n" +user2 +"\n" +user3 +"\n" +user4 +"\n" +user5);
 }
 $done(body);
