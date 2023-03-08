@@ -34,7 +34,7 @@ if (no === 1 ) {
 
         const user1 = `[${no}:1] ${cn1} (${von1}) ${distance1}\n${name1}(${pn1}) 小費:${tip1}\n＄:${cash1} ${vendor1}(${spa1}) (${items1})項$${total1}\n地址:(${zip1})${add1}\nPS:${si1}\n=====` ;
 
-        $notify( no + "單" , dmode , user1);
+        $notify( no + "單" , "dmode" , user1);
 
 } else if (no === 2 ) {
 
@@ -76,7 +76,7 @@ if (no === 1 ) {
         const user2 = `[${no}:2] ${cn2} (${von2}) ${distance2}\n${name2}(${pn2}) 小費:${tip2}\n＄:${cash2} ${vendor2}(${spa2}) (${items2})項$${total2}\n地址:(${zip2})${add2}\nPS:${si2}\n=====` ;
 
 
-        $notify( no + "單" , dmode , user1 +"\n" +user2);
+        $notify( no + "單" , ""dmode" , user1 +"\n" +user2);
 
 } else if (no === 3 ) {
 const cn1 = obj.route.deliveries[0].confirmation_number ;
