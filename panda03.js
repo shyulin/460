@@ -217,7 +217,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         
         
         
-                $notify( no + "單" , dmode , user1 +"\n" +user2 +"\n" +user3 +"\n" +user4);
+                $notify( no + "單" , "" , user1 +"\n" +user2 +"\n" +user3 +"\n" +user4);
 } else if (no === 5 ) {
                 const cn1 = obj.route.deliveries[0].confirmation_number ;
                 const von1 = obj.route.deliveries[0].vendor_order_number ;
@@ -315,6 +315,6 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
                 const user4 = `[${no}:4] ${cn4} (${von4}) ${distance4}\n${name4}(${pn4}) 小費:${tip4}\n＄:${cash4} ${vendor4}(${spa4}) (${items4})項$${total4}\n地址:(${zip4})${add4}\nPS:${si4}\n=====` ;
                 const user5 = `[${no}:5] ${cn5} (${von5}) ${distance5}\n${name5}(${pn5}) 小費:${tip5}\n＄:${cash5} ${vendor5}(${spa5}) (${items5})項$${total5}\n地址:(${zip5})${add5}\nPS:${si5}\n=====` ;
         
-                $notify( no + "單" , dmode , user1 +"\n" +user2 +"\n" +user3 +"\n" +user4 +"\n" +user5);
+                $notify( no + "單" , "" , user1 +"\n" +user2 +"\n" +user3 +"\n" +user4 +"\n" +user5);
 }
 $done(body);
