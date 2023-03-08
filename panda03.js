@@ -136,7 +136,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
 
 
 
-        $notify( no + "單" , dmode , user1 +"\n" +user2 +"\n" +user3);
+        $notify( no + "單" , "" , user1 +"\n" +user2 +"\n" +user3);
 } else if (no === 4 ) {
                 const cn1 = obj.route.deliveries[0].confirmation_number ;
                 const von1 = obj.route.deliveries[0].vendor_order_number ;
