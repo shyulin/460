@@ -12,7 +12,7 @@ var body = $response.body;
 var obj = JSON.parse(body);
 
 var no = obj.route.deliveries.length ;
-var dmode = obj.courier.dispatching_mode ;
+//var dmode = obj.courier.dispatching_mode ;
 
 if (no === 1 ) {
         const cn1 = obj.route.deliveries[0].confirmation_number ;
@@ -34,7 +34,7 @@ if (no === 1 ) {
 
         const user1 = `[${no}:1] ${cn1} (${von1}) ${distance1}\n${name1}(${pn1}) 小費:${tip1}\n＄:${cash1} ${vendor1}(${spa1}) (${items1})項$${total1}\n地址:(${zip1})${add1}\nPS:${si1}\n=====` ;
 
-        $notify( no + "單" , dmode , user1);
+        $notify( no + "單" , "" , user1);
 
 } else if (no === 2 ) {
 
