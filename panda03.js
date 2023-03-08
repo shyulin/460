@@ -12,7 +12,7 @@ var body = $response.body;
 var obj = JSON.parse(body);
 
 var no = obj.route.deliveries.length ;
-var dmode = obj.route.courier.dispatching_mode ;
+var dmode = obj.courier.dispatching_mode ;
 
 if (no === 1 ) {
         const cn1 = obj.route.deliveries[0].confirmation_number ;
