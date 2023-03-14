@@ -25,7 +25,7 @@ if (no === 1 ) {
         const tip1 = obj.route.deliveries[0].online_tip /100;
         const distance1 = obj.route.deliveries[0].distance ;
         const spa1 = obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
-        const dtp1 = obj.route.deliveries[0].distance_to_pickup.substr(0, 5) ;
+        const dtp1 = obj.route.deliveries[0].distance_to_pickup ;
 
         const pn1 = obj.route.deliveries[0].phone_number ;
         const items1 = obj.route.deliveries[0].items.length ;
@@ -50,7 +50,7 @@ if (no === 1 ) {
         const tip1 = obj.route.deliveries[0].online_tip /100 ;
         const distance1 = obj.route.deliveries[0].distance ;
         const spa1 = obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
-        const dtp1 = obj.route.deliveries[0].distance_to_pickup.substr(0, 5) ;
+        const dtp1 = obj.route.deliveries[0].distance_to_pickup ;
 
         const pn1 = obj.route.deliveries[0].phone_number ;
         const items1 = obj.route.deliveries[0].items.length ;
@@ -69,7 +69,7 @@ if (no === 1 ) {
         const tip2 = obj.route.deliveries[1].online_tip /100 ;
         const distance2 = obj.route.deliveries[1].distance ;
         const spa2 = obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) ;
-        const dtp2 = obj.route.deliveries[1].distance_to_pickup.substr(0, 5) ;
+        const dtp2 = obj.route.deliveries[1].distance_to_pickup ;
 
         const pn2 = obj.route.deliveries[1].phone_number ;
         const items2 = obj.route.deliveries[1].items.length ;
@@ -95,7 +95,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const tip1 = obj.route.deliveries[0].online_tip /100 ;
         const distance1 = obj.route.deliveries[0].distance ;
         const spa1 = obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
-        const dtp1 = obj.route.deliveries[0].distance_to_pickup.substr(0, 5) ;
+        const dtp1 = obj.route.deliveries[0].distance_to_pickup ;
 
         const pn1 = obj.route.deliveries[0].phone_number ;
         const items1 = obj.route.deliveries[0].items.length ;
@@ -114,7 +114,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const tip2 = obj.route.deliveries[1].online_tip /100 ;
         const distance2 = obj.route.deliveries[1].distance ;
         const spa2 = obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) ;
-        const dtp2 = obj.route.deliveries[1].distance_to_pickup.substr(0, 5) ;
+        const dtp2 = obj.route.deliveries[1].distance_to_pickup ;
 
         const pn2 = obj.route.deliveries[1].phone_number ;
         const items2 = obj.route.deliveries[1].items.length ;
@@ -133,7 +133,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const tip3 = obj.route.deliveries[2].online_tip /100 ;
         const distance3 = obj.route.deliveries[2].distance ;
         const spa3 = obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8) ;
-        const dtp3 = obj.route.deliveries[2].distance_to_pickup.substr(0, 5) ;
+        const dtp3 = obj.route.deliveries[2].distance_to_pickup ;
 
         const pn3 = obj.route.deliveries[2].phone_number ;
         const items3 = obj.route.deliveries[2].items.length ;
@@ -161,7 +161,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const tip1 = obj.route.deliveries[0].online_tip /100 ;
         const distance1 = obj.route.deliveries[0].distance ;
         const spa1 = obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
-        const dtp1 = obj.route.deliveries[0].distance_to_pickup.substr(0, 5) ;
+        const dtp1 = obj.route.deliveries[0].distance_to_pickup ;
 
         const pn1 = obj.route.deliveries[0].phone_number ;
         const items1 = obj.route.deliveries[0].items.length ;
@@ -181,7 +181,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const tip2 = obj.route.deliveries[1].online_tip /100 ;
         const distance2 = obj.route.deliveries[1].distance ;
         const spa2 = obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) ;
-        const dtp2 = obj.route.deliveries[1].distance_to_pickup.substr(0, 5) ;
+        const dtp2 = obj.route.deliveries[1].distance_to_pickup ;
 
         const pn2 = obj.route.deliveries[1].phone_number ;
         const items2 = obj.route.deliveries[1].items.length ;
@@ -201,7 +201,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const tip3 = obj.route.deliveries[2].online_tip /100 ;
         const distance3 = obj.route.deliveries[2].distance ;
         const spa3 = obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8) ;
-        const dtp3 = obj.route.deliveries[2].distance_to_pickup.substr(0, 5) ;
+        const dtp3 = obj.route.deliveries[2].distance_to_pickup ;
         const pn3 = obj.route.deliveries[2].phone_number ;
         const items3 = obj.route.deliveries[2].items.length ;
         const total3 = obj.route.deliveries[2].total /100 ;
@@ -220,7 +220,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const tip4 = obj.route.deliveries[3].online_tip /100 ;
         const distance4 = obj.route.deliveries[3].distance ;
         const spa4 = obj.route.deliveries[3].scheduled_pickup_at.substr(11, 8) ;
-        const dtp4 = obj.route.deliveries[3].distance_to_pickup.substr(0, 5) ;
+        const dtp4 = obj.route.deliveries[3].distance_to_pickup ;
 
         const pn4 = obj.route.deliveries[3].phone_number ;
         const items4 = obj.route.deliveries[3].items.length ;
@@ -250,7 +250,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const tip1 = obj.route.deliveries[0].online_tip /100 ;
         const distance1 = obj.route.deliveries[0].distance ;
         const spa1 = obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
-        const dtp1 = obj.route.deliveries[0].distance_to_pickup.substr(0, 5) ;
+        const dtp1 = obj.route.deliveries[0].distance_to_pickup ;
 
         const pn1 = obj.route.deliveries[0].phone_number ;
         const items1 = obj.route.deliveries[0].items.length ;
@@ -270,7 +270,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const tip2 = obj.route.deliveries[1].online_tip /100 ;
         const distance2 = obj.route.deliveries[1].distance ;
         const spa2 = obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) ;
-        const dtp2 = obj.route.deliveries[1].distance_to_pickup.substr(0, 5) ;
+        const dtp2 = obj.route.deliveries[1].distance_to_pickup ;
 
         const pn2 = obj.route.deliveries[1].phone_number ;
         const items2 = obj.route.deliveries[1].items.length ;
@@ -290,7 +290,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const tip3 = obj.route.deliveries[2].online_tip /100 ;
         const distance3 = obj.route.deliveries[2].distance ;
         const spa3 = obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8) ;
-        const dtp3 = obj.route.deliveries[2].distance_to_pickup.substr(0, 5) ;
+        const dtp3 = obj.route.deliveries[2].distance_to_pickup ;
 
         const pn3 = obj.route.deliveries[2].phone_number ;
         const items3 = obj.route.deliveries[2].items.length ;
@@ -310,7 +310,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const tip4 = obj.route.deliveries[3].online_tip /100 ;
         const distance4 = obj.route.deliveries[3].distance ;
         const spa4 = obj.route.deliveries[3].scheduled_pickup_at.substr(11, 8) ;
-        const dtp4 = obj.route.deliveries[3].distance_to_pickup.substr(0, 5) ;
+        const dtp4 = obj.route.deliveries[3].distance_to_pickup ;
 
         const pn4 = obj.route.deliveries[3].phone_number ;
         const items4 = obj.route.deliveries[3].items.length ;
@@ -330,7 +330,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const tip5 = obj.route.deliveries[4].online_tip /100 ;
         const distance5 = obj.route.deliveries[4].distance ;
         const spa5 = obj.route.deliveries[4].scheduled_pickup_at.substr(11, 8) ;
-        const dtp5 = obj.route.deliveries[4].distance_to_pickup.substr(0, 5) ;
+        const dtp5 = obj.route.deliveries[4].distance_to_pickup ;
 
         const pn5 = obj.route.deliveries[4].phone_number ;
         const items5 = obj.route.deliveries[4].items.length ;
