@@ -38,7 +38,8 @@ if (no === 1 ) {
         const si1 = obj.route.addresses[1].special_instructions ;
         const place1 = obj.route.addresses[1].place_id ;
 
-        const user1 = `[${no}:1] [${status1}][${spa1}][${dtp1}]\n${cn1} (${von1}) ${distance1}\n${name1}(${pn1}) 小費:${tip1}\n＄:${cash1} ${vendor1} [${items1}]項$${total1}\nGPS:[${place1}]\n地址:(${zip1})${add1}\nPS:${si1}\n=====` ;
+        const user1 = `[${no}:1] [${status1}]⏰[${spa1}][${dtp1}]\n${cn1} (${von1}) 🛵${distance1}\n🧟‍♂️${name1}(${pn1}) 💰:${tip1}\n💵:${cash1} ${vendor1} [${items1}]項$${total1}\n📡:[${place1}]\n🏘:(${zip1})${add1}\n🏷:${si1}\n=====` ;
+
 
         $notify( no + "單" +dmode , "" , user1);
 
@@ -84,8 +85,8 @@ if (no === 1 ) {
         const si2 = obj.route.addresses[3].special_instructions ;
         const place2 = obj.route.addresses[3].place_id ;
 
-        const user1 = `[${no}:1] [${status1}][${spa1}][${dtp1}]\n${cn1} (${von1}) ${distance1}\n${name1}(${pn1}) 小費:${tip1}\n＄:${cash1} ${vendor1} [${items1}]項$${total1}\nGPS:[${place1}]\n地址:(${zip1})${add1}\nPS:${si1}\n=====` ;
-        const user2 = `[${no}:2] [${status2}][${spa2}][${dtp2}]\n${cn2} (${von2}) ${distance2}\n${name2}(${pn2}) 小費:${tip2}\n＄:${cash2} ${vendor2} [${items2}]項$${total2}\nGPS:[${place2}]\n地址:(${zip2})${add2}\nPS:${si2}\n=====` ;
+        const user1 = `[${no}:1] [${status1}]⏰[${spa1}][${dtp1}]\n${cn1} (${von1}) 🛵${distance1}\n🧟‍♂️${name1}(${pn1}) 💰:${tip1}\n💵:${cash1} ${vendor1} [${items1}]項$${total1}\n📡:[${place1}]\n🏘:(${zip1})${add1}\n🏷:${si1}\n=====` ;
+        const user2 = `[${no}:2] [${status2}]⏰[${spa2}][${dtp2}]\n${cn2} (${von2}) 🛵${distance2}\n🧟‍♂️${name2}(${pn2}) 💰:${tip2}\n💵:${cash2} ${vendor2} [${items2}]項$${total2}\n📡:[${place2}]\n🏘:(${zip2})${add2}\n🏷:${si2}\n=====` ;
 
 
         $notify( no + "單" +dmode , "" , user1 +"\n" +user2);
@@ -151,10 +152,9 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const si3 = obj.route.addresses[5].special_instructions ;
         const place3 = obj.route.addresses[5].place_id ;
 
-        const user1 = `[${no}:1] [${status1}][${spa1}][${dtp1}]\n${cn1} (${von1}) ${distance1}\n${name1}(${pn1}) 小費:${tip1}\n＄:${cash1} ${vendor1} [${items1}]項$${total1}\nGPS:[${place1}]\n地址:(${zip1})${add1}\nPS:${si1}\n=====` ;
-        const user2 = `[${no}:2] [${status2}][${spa2}][${dtp2}]\n${cn2} (${von2}) ${distance2}\n${name2}(${pn2}) 小費:${tip2}\n＄:${cash2} ${vendor2} [${items2}]項$${total2}\nGPS:[${place2}]\n地址:(${zip2})${add2}\nPS:${si2}\n=====` ;
-        const user3 = `[${no}:3] [${status3}][${spa3}][${dtp3}]\n${cn3} (${von3}) ${distance3}\n${name3}(${pn3}) 小費:${tip3}\n＄:${cash3} ${vendor3} [${items3}]項$${total3}\nGPS:[${place3}]\n地址:(${zip3})${add3}\nPS:${si3}\n=====` ;
-
+        const user1 = `[${no}:1] [${status1}]⏰[${spa1}][${dtp1}]\n${cn1} (${von1}) 🛵${distance1}\n🧟‍♂️${name1}(${pn1}) 💰:${tip1}\n💵:${cash1} ${vendor1} [${items1}]項$${total1}\n📡:[${place1}]\n🏘:(${zip1})${add1}\n🏷:${si1}\n=====` ;
+        const user2 = `[${no}:2] [${status2}]⏰[${spa2}][${dtp2}]\n${cn2} (${von2}) 🛵${distance2}\n🧟‍♂️${name2}(${pn2}) 💰:${tip2}\n💵:${cash2} ${vendor2} [${items2}]項$${total2}\n📡:[${place2}]\n🏘:(${zip2})${add2}\n🏷:${si2}\n=====` ;
+        const user3 = `[${no}:3] [${status3}]⏰[${spa3}][${dtp3}]\n${cn3} (${von3}) 🛵${distance3}\n🧟‍♂️${name3}(${pn3}) 💰:${tip3}\n💵:${cash3} ${vendor3} [${items3}]項$${total3}\n📡:[${place3}]\n🏘:(${zip3})${add3}\n🏷:${si3}\n=====` ;
 
 
         $notify( no + "單" +dmode , "" , user1 +"\n" +user2 +"\n" +user3);
@@ -242,11 +242,11 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const si4 = obj.route.addresses[7].special_instructions ;
         const place4 = obj.route.addresses[7].place_id ;
         
-        const user1 = `[${no}:1] [${status1}][${spa1}][${dtp1}]\n${cn1} (${von1}) ${distance1}\n${name1}(${pn1}) 小費:${tip1}\n＄:${cash1} ${vendor1} [${items1}]項$${total1}\nGPS:[${place1}]\n地址:(${zip1})${add1}\nPS:${si1}\n=====` ;
-        const user2 = `[${no}:2] [${status2}][${spa2}][${dtp2}]\n${cn2} (${von2}) ${distance2}\n${name2}(${pn2}) 小費:${tip2}\n＄:${cash2} ${vendor2} [${items2}]項$${total2}\nGPS:[${place2}]\n地址:(${zip2})${add2}\nPS:${si2}\n=====` ;
-        const user3 = `[${no}:3] [${status3}][${spa3}][${dtp3}]\n${cn3} (${von3}) ${distance3}\n${name3}(${pn3}) 小費:${tip3}\n＄:${cash3} ${vendor3} [${items3}]項$${total3}\nGPS:[${place3}]\n地址:(${zip3})${add3}\nPS:${si3}\n=====` ;
-        const user4 = `[${no}:4] [${status4}][${spa4}][${dtp4}]\n${cn4} (${von4}) ${distance4}\n${name4}(${pn4}) 小費:${tip4}\n＄:${cash4} ${vendor4} [${items4}]項$${total4}\nGPS:[${place4}]\n地址:(${zip4})${add4}\nPS:${si4}\n=====` ;
-        
+        const user1 = `[${no}:1] [${status1}]⏰[${spa1}][${dtp1}]\n${cn1} (${von1}) 🛵${distance1}\n🧟‍♂️${name1}(${pn1}) 💰:${tip1}\n💵:${cash1} ${vendor1} [${items1}]項$${total1}\n📡:[${place1}]\n🏘:(${zip1})${add1}\n🏷:${si1}\n=====` ;
+        const user2 = `[${no}:2] [${status2}]⏰[${spa2}][${dtp2}]\n${cn2} (${von2}) 🛵${distance2}\n🧟‍♂️${name2}(${pn2}) 💰:${tip2}\n💵:${cash2} ${vendor2} [${items2}]項$${total2}\n📡:[${place2}]\n🏘:(${zip2})${add2}\n🏷:${si2}\n=====` ;
+        const user3 = `[${no}:3] [${status3}]⏰[${spa3}][${dtp3}]\n${cn3} (${von3}) 🛵${distance3}\n🧟‍♂️${name3}(${pn3}) 💰:${tip3}\n💵:${cash3} ${vendor3} [${items3}]項$${total3}\n📡:[${place3}]\n🏘:(${zip3})${add3}\n🏷:${si3}\n=====` ;
+        const user4 = `[${no}:4] [${status4}]⏰[${spa4}][${dtp4}]\n${cn4} (${von4}) 🛵${distance4}\n🧟‍♂️${name4}(${pn4}) 💰:${tip4}\n💵:${cash4} ${vendor4} [${items4}]項$${total4}\n📡:[${place4}]\n🏘:(${zip4})${add4}\n🏷:${si4}\n=====` ;
+
         
         
                 $notify( no + "單" +dmode , "" , user1 +"\n" +user2 +"\n" +user3 +"\n" +user4);
@@ -357,11 +357,11 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const si5 = obj.route.addresses[9].special_instructions ;
         const place5 = obj.route.addresses[9].place_id ;
         
-        const user1 = `[${no}:1] [${status1}][${spa1}][${dtp1}]\n${cn1} (${von1}) ${distance1}\n${name1}(${pn1}) 小費:${tip1}\n＄:${cash1} ${vendor1} [${items1}]項$${total1}\nGPS:[${place1}]\n地址:(${zip1})${add1}\nPS:${si1}\n=====` ;
-        const user2 = `[${no}:2] [${status2}][${spa2}][${dtp2}]\n${cn2} (${von2}) ${distance2}\n${name2}(${pn2}) 小費:${tip2}\n＄:${cash2} ${vendor2} [${items2}]項$${total2}\nGPS:[${place2}]\n地址:(${zip2})${add2}\nPS:${si2}\n=====` ;
-        const user3 = `[${no}:3] [${status3}][${spa3}][${dtp3}]\n${cn3} (${von3}) ${distance3}\n${name3}(${pn3}) 小費:${tip3}\n＄:${cash3} ${vendor3} [${items3}]項$${total3}\nGPS:[${place3}]\n地址:(${zip3})${add3}\nPS:${si3}\n=====` ;
-        const user4 = `[${no}:4] [${status4}][${spa4}][${dtp4}]\n${cn4} (${von4}) ${distance4}\n${name4}(${pn4}) 小費:${tip4}\n＄:${cash4} ${vendor4} [${items4}]項$${total4}\nGPS:[${place4}]\n地址:(${zip4})${add4}\nPS:${si4}\n=====` ;
-        const user5 = `[${no}:5] [${status5}][${spa5}][${dtp5}]\n${cn5} (${von5}) ${distance5}\n${name5}(${pn5}) 小費:${tip5}\n＄:${cash5} ${vendor5} [${items5}]項$${total5}\nGPS:[${place5}]\n地址:(${zip5})${add5}\nPS:${si5}\n=====` ;
+        const user1 = `[${no}:1] [${status1}]⏰[${spa1}][${dtp1}]\n${cn1} (${von1}) 🛵${distance1}\n🧟‍♂️${name1}(${pn1}) 💰:${tip1}\n💵:${cash1} ${vendor1} [${items1}]項$${total1}\n📡:[${place1}]\n🏘:(${zip1})${add1}\n🏷:${si1}\n=====` ;
+        const user2 = `[${no}:2] [${status2}]⏰[${spa2}][${dtp2}]\n${cn2} (${von2}) 🛵${distance2}\n🧟‍♂️${name2}(${pn2}) 💰:${tip2}\n💵:${cash2} ${vendor2} [${items2}]項$${total2}\n📡:[${place2}]\n🏘:(${zip2})${add2}\n🏷:${si2}\n=====` ;
+        const user3 = `[${no}:3] [${status3}]⏰[${spa3}][${dtp3}]\n${cn3} (${von3}) 🛵${distance3}\n🧟‍♂️${name3}(${pn3}) 💰:${tip3}\n💵:${cash3} ${vendor3} [${items3}]項$${total3}\n📡:[${place3}]\n🏘:(${zip3})${add3}\n🏷:${si3}\n=====` ;
+        const user4 = `[${no}:4] [${status4}]⏰[${spa4}][${dtp4}]\n${cn4} (${von4}) 🛵${distance4}\n🧟‍♂️${name4}(${pn4}) 💰:${tip4}\n💵:${cash4} ${vendor4} [${items4}]項$${total4}\n📡:[${place4}]\n🏘:(${zip4})${add4}\n🏷:${si4}\n=====` ;
+        const user5 = `[${no}:5] [${status5}]⏰[${spa5}][${dtp5}]\n${cn5} (${von5}) 🛵${distance5}\n🧟‍♂️${name5}(${pn5}) 💰:${tip5}\n💵:${cash5} ${vendor5} [${items5}]項$${total5}\n📡:[${place5}]\n🏘:(${zip5})${add5}\n🏷:${si5}\n=====` ;
         
         $notify( no + "單" +dmode , "" , user1 +"\n" +user2 +"\n" +user3 +"\n" +user4 +"\n" +user5);
 }
