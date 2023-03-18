@@ -47,7 +47,7 @@ if (no === 1 ) {
 
 } else if (no === 2 ) {
 
-        const status1 = obj.route.deliveries[0].status ;
+        const status1 = status_d.find( obj.route.deliveries[0].status) ;
         const cn1 = obj.route.deliveries[0].confirmation_number ;
         const von1 = obj.route.deliveries[0].vendor_order_number ;
         const name1 = obj.route.deliveries[0].name ;
@@ -67,7 +67,7 @@ if (no === 1 ) {
         const si1 = obj.route.addresses[2].special_instructions ;
 //        const place1 = obj.route.addresses[2].place_id ;
 
-        const status2 = obj.route.deliveries[1].status ;
+        const status2 = status_d.find( obj.route.deliveries[1].status) ;
         const cn2 = obj.route.deliveries[1].confirmation_number ;
         const von2 = obj.route.deliveries[1].vendor_order_number ;
         const name2 = obj.route.deliveries[1].name ;
@@ -94,8 +94,8 @@ if (no === 1 ) {
         $notify( no + "單" +dmode , "" , user1 +"\n" +user2);
 
 } else if (no === 3 ) {
-const cn1 = obj.route.deliveries[0].confirmation_number ;
-        const status1 = obj.route.deliveries[0].status ;
+        const cn1 = obj.route.deliveries[0].confirmation_number ;
+        const status1 = status_d.find( obj.route.deliveries[0].status) ;
         const von1 = obj.route.deliveries[0].vendor_order_number ;
         const name1 = obj.route.deliveries[0].name ;
         const cash1 = obj.route.deliveries[0].cash_collection.collect_at_dropoff /100 ;
@@ -114,7 +114,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const si1 = obj.route.addresses[3].special_instructions ;
   //      const place1 = obj.route.addresses[3].place_id ;
 
-        const status2 = obj.route.deliveries[1].status ;
+        const status2 = status_d.find( obj.route.deliveries[1].status) ;
         const cn2 = obj.route.deliveries[1].confirmation_number ;
         const von2 = obj.route.deliveries[1].vendor_order_number ;
         const name2 = obj.route.deliveries[1].name ;
@@ -134,7 +134,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const si2 = obj.route.addresses[4].special_instructions ;
  //       const place2 = obj.route.addresses[4].place_id ;
 
-        const status3 = obj.route.deliveries[2].status ;
+        const status3 = status_d.find( obj.route.deliveries[2].status) ;
         const cn3 = obj.route.deliveries[2].confirmation_number ;
         const von3 = obj.route.deliveries[2].vendor_order_number ;
         const name3 = obj.route.deliveries[2].name ;
@@ -161,7 +161,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
 
         $notify( no + "單" +dmode , "" , user1 +"\n" +user2 +"\n" +user3);
 } else if (no === 4 ) {
-        const status1 = obj.route.deliveries[0].status ;
+        const status1 = status_d.find( obj.route.deliveries[0].status) ;
         const cn1 = obj.route.deliveries[0].confirmation_number ;
         const von1 = obj.route.deliveries[0].vendor_order_number ;
         const name1 = obj.route.deliveries[0].name ;
@@ -182,7 +182,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const si1 = obj.route.addresses[4].special_instructions ;
 //        const place1 = obj.route.addresses[4].place_id ;
         
-        const status2 = obj.route.deliveries[1].status ;
+        const status2 = status_d.find( obj.route.deliveries[1].status) ;
         const cn2 = obj.route.deliveries[1].confirmation_number ;
         const von2 = obj.route.deliveries[1].vendor_order_number ;
         const name2 = obj.route.deliveries[1].name ;
@@ -203,7 +203,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const si2 = obj.route.addresses[5].special_instructions ;
  //       const place2 = obj.route.addresses[5].place_id ;
         
-        const status3 = obj.route.deliveries[2].status ;
+        const status3 = status_d.find( obj.route.deliveries[2].status) ;
         const cn3 = obj.route.deliveries[2].confirmation_number ;
         const von3 = obj.route.deliveries[2].vendor_order_number ;
         const name3 = obj.route.deliveries[2].name ;
@@ -223,7 +223,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const si3 = obj.route.addresses[6].special_instructions ;
  //       const place3 = obj.route.addresses[6].place_id ;
 
-        const status4 = obj.route.deliveries[3].status ;
+        const status4 = status_d.find( obj.route.deliveries[3].status) ;
         const cn4 = obj.route.deliveries[3].confirmation_number ;
         const von4 = obj.route.deliveries[3].vendor_order_number ;
         const name4 = obj.route.deliveries[3].name ;
@@ -254,7 +254,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
                 $notify( no + "單" +dmode , "" , user1 +"\n" +user2 +"\n" +user3 +"\n" +user4);
 } else if (no === 5 ) {
 
-        const status1 = obj.route.deliveries[0].status ;
+        const status1 = status_d.find( obj.route.deliveries[0].status) ;
         const cn1 = obj.route.deliveries[0].confirmation_number ;
         const von1 = obj.route.deliveries[0].vendor_order_number ;
         const name1 = obj.route.deliveries[0].name ;
@@ -275,7 +275,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const si1 = obj.route.addresses[5].special_instructions ;
 //        const place1 = obj.route.addresses[5].place_id ;
 
-        const status2 = obj.route.deliveries[1].status ;
+        const status2 = status_d.find( obj.route.deliveries[1].status) ;        
         const cn2 = obj.route.deliveries[1].confirmation_number ;
         const von2 = obj.route.deliveries[1].vendor_order_number ;
         const name2 = obj.route.deliveries[1].name ;
@@ -296,7 +296,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const si2 = obj.route.addresses[6].special_instructions ;
  //       const place2 = obj.route.addresses[6].place_id ;
         
-        const status3 = obj.route.deliveries[2].status ;
+         const status3 = status_d.find( obj.route.deliveries[2].status) ;
         const cn3 = obj.route.deliveries[2].confirmation_number ;
         const von3 = obj.route.deliveries[2].vendor_order_number ;
         const name3 = obj.route.deliveries[2].name ;
@@ -317,7 +317,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const si3 = obj.route.addresses[7].special_instructions ;
  //       const place3 = obj.route.addresses[7].place_id ;
 
-        const status4 = obj.route.deliveries[3].status ;
+        const status4 = status_d.find( obj.route.deliveries[3].status) ;
         const cn4 = obj.route.deliveries[3].confirmation_number ;
         const von4 = obj.route.deliveries[3].vendor_order_number ;
         const name4 = obj.route.deliveries[3].name ;
@@ -338,7 +338,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const si4 = obj.route.addresses[8].special_instructions ;
 //        const place4 = obj.route.addresses[8].place_id ;
 
-        const status5 = obj.route.deliveries[4].status ;
+        const status5 = status_d.find( obj.route.deliveries[4].status) ;
         const cn5 = obj.route.deliveries[4].confirmation_number ;
         const von5 = obj.route.deliveries[4].vendor_order_number ;
         const name5 = obj.route.deliveries[4].name ;
