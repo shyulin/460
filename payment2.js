@@ -1,4 +1,4 @@
-/* 薪資頁
+/* 0薪資頁
 [rewrite_local]
 
 ^https:\/\/tw\.usehurrier\.com\/api\/rooster-payments\/v1\/payments\/daily\-summary\?date\=\d{4}\-\d{2}\-\d{2}\&city\_id\=\d{1}\&with\_time\_zone\=Asia\%2FTaipei script-response-body https://raw.githubusercontent.com/shyulin/460/master/payment.js
