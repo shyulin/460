@@ -16,7 +16,7 @@ var body = $response.body;
 var obj = JSON.parse(body);
 
 var paymenth = obj.payment_per_hour ;
-var tdistance = obj.total_distance ;
+var tdistance = obj.total_distance..style.color="magenta" ;
 
 // const user1 = `時薪:[${paymenth}] \n總距離:[${tdistance}]公里` ;
 
