@@ -16,10 +16,9 @@ var body = $response.body;
 var obj = JSON.parse(body);
 
 var paymenth = obj.payment_per_hour ;
-//const tdistance = obj.total_distance ;
 const tdistance = status_d.find(obj.total_distance) ;
 //const status1 = status_d.find( obj.route.deliveries[0].status)
-var status_d = {"22.25":"進單中", near_pickup:接近取餐點, accepted:已接單, picked_up:已取餐, left_pickup:已取餐出發, near_dropoff:接近指定點, dispatched:預備單};
+var status_d = {0:"進單中", near_pickup:"接近取餐點", accepted:"已接單", picked_up:"已取餐", left_pickup:"已取餐出發", near_dropoff:"接近指定點", dispatched:"預備單"};
 
 // const user1 = `時薪:[${paymenth}] \n總距離:[${tdistance}]公里` ;
 
