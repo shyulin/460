@@ -20,6 +20,6 @@ var tdistance = obj.total_distance ;
 
 // const user1 = `時薪:[${paymenth}] \n總距離:[${tdistance}]公里` ;
 
-$notify( "總距離" +tdistance +"公里" , "" , "時薪" +paymenth +"元");
+$notify( "總距離" +tdistance +"公里" , "🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸" , "時薪" +paymenth +"元");
 
 $done(body);
