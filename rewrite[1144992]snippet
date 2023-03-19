@@ -2,4 +2,4 @@
 hostname = tw.usehurrier.com
 ^https:\/\/tw\.usehurrier\.com\/api\/mobile\/v2\/state\/1144992\?source\=Delivery\&update\_trigger\=pull\_down\_gesture url script-response-body https://raw.githubusercontent.com/shyulin/460/master/panda_bai_01.js
 
-^https:\/\/tw\.usehurrier\.com\/api\/rooster-payments\/v1\/payments\/daily\-summary\?date\=\d{4}\-\d{2}\-\d{2}\&city\_id\=\d{1}\&with\_time\_zone\=Asia\%2FTaipei url script-response-body https://raw.githubusercontent.com/shyulin/460/master/payment2.js
+^https:\/\/tw\.usehurrier\.com\/api\/rooster-payments\/v1\/payments\/daily\-summary\?date\=\d{4}\-\d{2}\-\d{2}\&city\_id\=\d{1}\&with\_time\_zone\=Asia\%2FTaipei url script-response-body https://raw.githubusercontent.com/shyulin/460/master/payment1.js
