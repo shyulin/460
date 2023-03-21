@@ -21,7 +21,7 @@ var status_d = {courier_notified:進單中, near_pickup:接近取餐點, accepte
 if (no === 1 ) {
   //      const status1 = obj.route.deliveries[0].status ;
     const status_1 = obj.route.deliveries[0].status ;
-    const status1 = status_d["status_1"]:
+    const status1 = status_d[status_1]:
         const cn1 = obj.route.deliveries[0].confirmation_number ;
         const von1 = obj.route.deliveries[0].vendor_order_number ;
         const name1 = obj.route.deliveries[0].name ;
