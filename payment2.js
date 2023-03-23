@@ -1,4 +1,4 @@
-/* 0薪資頁
+/* 薪資頁
 [rewrite_local]
 
 ^https:\/\/tw\.usehurrier\.com\/api\/rooster-payments\/v1\/payments\/daily\-summary\?date\=\d{4}\-\d{2}\-\d{2}\&city\_id\=\d{1}\&with\_time\_zone\=Asia\%2FTaipei script-response-body https://raw.githubusercontent.com/shyulin/460/master/payment.js
@@ -16,9 +16,7 @@ var body = $response.body;
 var obj = JSON.parse(body);
 
 var paymenth = obj.payment_per_hour ;
-const tdistance = status_d.find(obj.total_distance) ;
-//const status1 = status_d.find( obj.route.deliveries[0].status)
-var status_d = {0:"進單中", near_pickup:"接近取餐點", accepted:"已接單", picked_up:"已取餐", left_pickup:"已取餐出發", near_dropoff:"接近指定點", dispatched:"預備單"};
+var tdistance = obj.total_distance ;
 
 // const user1 = `時薪:[${paymenth}] \n總距離:[${tdistance}]公里` ;
 
