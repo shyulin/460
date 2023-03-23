@@ -41,7 +41,7 @@ if (no === 1 ) {
 //        const tip1 = obj.route.deliveries[0].online_tip /100;
 //        const distance1 = obj.route.deliveries[0].distance ;
 //        const spa1 = obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
-const spa1 = Date.parse(obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8)).valueOf() < Date.parse(nowdate).valueof() ? obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) + '⏰' : obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
+const spa1 = Date.parse(obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8)).valueOf() <= Date.parse(nowdate).valueof() ? obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) + '⏰' : obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
  
 //       const dtp1 = obj.route.deliveries[0].distance_to_pickup ;
 
