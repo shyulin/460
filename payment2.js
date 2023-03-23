@@ -18,6 +18,8 @@ var obj = JSON.parse(body);
 var paymenth = obj.payment_per_hour ;
 var tdistance = obj.total_distance ;
 
+if (payment >=  144 .22 ? '很大' : 'payment');
+
 // const user1 = `時薪:[${paymenth}] \n總距離:[${tdistance}]公里` ;
 
 $notify( "總距離" +tdistance +"公里" , "" , "時薪" +paymenth +"元");
