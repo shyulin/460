@@ -69,7 +69,7 @@ if (no === 1 ) {
         const si1 = obj.route.addresses[2].special_instructions ;
 //        const place1 = obj.route.addresses[2].place_id ;
 
-const status1 = status_d[obj.route.deliveries[1].status];
+const status2 = status_d[obj.route.deliveries[1].status];
         const cn2 = obj.route.deliveries[1].confirmation_number ;
         const von2 = obj.route.deliveries[1].vendor_order_number ;
         const name2 = obj.route.deliveries[1].name ;
@@ -116,7 +116,7 @@ const status1 = status_d[obj.route.deliveries[1].status];
         const si1 = obj.route.addresses[3].special_instructions ;
   //      const place1 = obj.route.addresses[3].place_id ;
 
-         const status1 = status_d[obj.route.deliveries[1].status];
+         const status2 = status_d[obj.route.deliveries[1].status];
         const cn2 = obj.route.deliveries[1].confirmation_number ;
         const von2 = obj.route.deliveries[1].vendor_order_number ;
         const name2 = obj.route.deliveries[1].name ;
@@ -136,7 +136,7 @@ const status1 = status_d[obj.route.deliveries[1].status];
         const si2 = obj.route.addresses[4].special_instructions ;
  //       const place2 = obj.route.addresses[4].place_id ;
 
- const status1 = status_d[obj.route.deliveries[2].status];
+ const status3 = status_d[obj.route.deliveries[2].status];
         const cn3 = obj.route.deliveries[2].confirmation_number ;
         const von3 = obj.route.deliveries[2].vendor_order_number ;
         const name3 = obj.route.deliveries[2].name ;
@@ -184,7 +184,7 @@ const status1 = status_d[obj.route.deliveries[1].status];
         const si1 = obj.route.addresses[4].special_instructions ;
 //        const place1 = obj.route.addresses[4].place_id ;
         
-const status1 = status_d[obj.route.deliveries[1].status];
+const status2 = status_d[obj.route.deliveries[1].status];
         const cn2 = obj.route.deliveries[1].confirmation_number ;
         const von2 = obj.route.deliveries[1].vendor_order_number ;
         const name2 = obj.route.deliveries[1].name ;
@@ -205,7 +205,7 @@ const status1 = status_d[obj.route.deliveries[1].status];
         const si2 = obj.route.addresses[5].special_instructions ;
  //       const place2 = obj.route.addresses[5].place_id ;
         
- const status1 = status_d[obj.route.deliveries[2].status];
+ const status3 = status_d[obj.route.deliveries[2].status];
         const cn3 = obj.route.deliveries[2].confirmation_number ;
         const von3 = obj.route.deliveries[2].vendor_order_number ;
         const name3 = obj.route.deliveries[2].name ;
@@ -225,7 +225,7 @@ const status1 = status_d[obj.route.deliveries[1].status];
         const si3 = obj.route.addresses[6].special_instructions ;
  //       const place3 = obj.route.addresses[6].place_id ;
 
- const status1 = status_d[obj.route.deliveries[3].status];
+ const status4 = status_d[obj.route.deliveries[3].status];
         const cn4 = obj.route.deliveries[3].confirmation_number ;
         const von4 = obj.route.deliveries[3].vendor_order_number ;
         const name4 = obj.route.deliveries[3].name ;
