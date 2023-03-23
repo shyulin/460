@@ -16,7 +16,7 @@ var obj = JSON.parse(body);
 
 var no = obj.route.deliveries.length ;
 var dmode = obj.courier.dispatching_mode ;
-var status_d = {courier_notified:進單中, near_pickup:接近取餐點, accepted:已接單, picked_up:已取餐, left_pickup:已取餐出發, near_dropoff:接近送餐點, dispatched:預備單};
+var status_d = {courier_notified:"進單中", near_pickup:"接近取餐點", accepted:"已接單", picked_up:"已取餐", left_pickup:"已取餐出發", near_dropoff:"接近指定點", dispatched:"預備單"};
 
 if (no === 1 ) {
   //      const status1 = obj.route.deliveries[0].status ;
@@ -369,3 +369,4 @@ if (no === 1 ) {
         $notify( no + "單" +dmode , "" , user1 +"\n" +user2 +"\n" +user3 +"\n" +user4 +"\n" +user5);
 }
 $done(body);
+
