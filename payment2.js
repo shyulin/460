@@ -15,7 +15,7 @@ var tdistance = obj.total_distance ; 總距離
 var body = $response.body;
 var obj = JSON.parse(body);
 
-var paymenth = obj.payment_per_hour ==  0 ? '💳💳💳' : obj.payment_per_hour ;
+var paymenth = obj.payment_per_hour ==  0 ? '💳💳💳' : obj.payment_per_hour /100 ;
 var tdistance = obj.total_distance ;
 
 
