@@ -15,7 +15,7 @@ var tdistance = obj.total_distance ; 總距離
 var body = $response.body;
 var obj = JSON.parse(body);
 
-var paymenth = obj.payment_per_hour >=  144.22 ? '很大' : 'obj.payment_per_hour' ;
+var paymenth = obj.payment_per_hour >=  144.22 ? '很大' : obj.payment_per_hour ;
 var tdistance = obj.total_distance ;
 
 
