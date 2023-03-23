@@ -14,6 +14,12 @@ const dtp1 = obj.route.deliveries[0].distance_to_pickup.substr(0, 5) ;
 const place1 = obj.route.addresses[1].place_id ;
 var paymenth = obj.payment_per_hour ==  0 ? '💳💳💳' : obj.payment_per_hour ;
 const cash1 = obj.route.deliveries[0].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : obj.route.deliveries[0].cash_collection.collect_at_dropoff /100 ;
+if ( (Date.parse(ScheduleDate)).valueOf() < (Date.parse(CurrentDate)).valueOf())
+{
+alert("ScheduleDate比系統目前時間小");
+}
+const spa1 = Date.parse(obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8)).valueOf() < Date.parse(nowdate).valueof() ? obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) + '⏰' : obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
+ 
 */
 
 var body = $response.body;
@@ -33,9 +39,11 @@ if (no === 1 ) {
         const name1 = obj.route.deliveries[0].name ;
         const cash1 = obj.route.deliveries[0].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : obj.route.deliveries[0].cash_collection.collect_at_dropoff /100 ;
 //        const tip1 = obj.route.deliveries[0].online_tip /100;
- //       const distance1 = obj.route.deliveries[0].distance ;
-        const spa1 = obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
- //       const dtp1 = obj.route.deliveries[0].distance_to_pickup ;
+//        const distance1 = obj.route.deliveries[0].distance ;
+//        const spa1 = obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
+const spa1 = Date.parse(obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8)).valueOf() < Date.parse(nowdate).valueof() ? obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) + '⏰' : obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
+ 
+//       const dtp1 = obj.route.deliveries[0].distance_to_pickup ;
 
         const pn1 = obj.route.deliveries[0].phone_number ;
         const items1 = obj.route.deliveries[0].items.length ;
