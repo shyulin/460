@@ -83,7 +83,7 @@ const spa1 = Date.parse(obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8
         const cn2 = obj.route.deliveries[1].confirmation_number ;
         const von2 = obj.route.deliveries[1].vendor_order_number ;
         const name2 = obj.route.deliveries[1].name ;
-        const cash1 = obj.route.deliveries[1].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : obj.route.deliveries[1].cash_collection.collect_at_dropoff /100 ;
+        const cash2 = obj.route.deliveries[1].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : obj.route.deliveries[1].cash_collection.collect_at_dropoff /100 ;
 
         const spa2 = obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) ;
  //       const dtp2 = obj.route.deliveries[1].distance_to_pickup ;
