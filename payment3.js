@@ -16,8 +16,8 @@ var body = $response.body;
 var obj = JSON.parse(body);
 
 var nowdate = Date('2017-07-09T00:00:00+0800');
-const testdate = "2023-03-08T18:09:35.000+08:00"
-const spa1 = Date.parse(nowdate).valueOf() < Date.parse(testdate).valueof() ? nowdate + '⏰' : nowdate ;
+//const testdate = "2023-03-08T18:09:35.000+08:00"
+//const spa1 = Date.parse(nowdate).valueOf() < Date.parse(testdate).valueof() ? nowdate + '⏰' : nowdate ;
  
 
 var paymenth = obj.payment_per_hour ;
@@ -25,6 +25,6 @@ var tdistance = obj.total_distance ;
 
 // const user1 = `時薪:[${paymenth}] \n總距離:[${tdistance}]公里` ;
 
-$notify( "總距離" +tdistance +"公里" , "" , "時薪" +paymenth +"元" +spa1);
+$notify( "總距離" +tdistance +"公里" , "" , "時薪" +paymenth +"元" + nowdate);
 
 $done(body);
