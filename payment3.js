@@ -9,6 +9,7 @@ hostname = tw.usehurrier.com
 
 var paymenth = obj.payment_per_hour ; 時薪
 var tdistance = obj.total_distance ; 總距離
+var spa1 = obj.shifts[0].end_at ;
 
 */
 
@@ -17,7 +18,7 @@ var obj = JSON.parse(body);
 
 var nowdate = Date('2017-07-09T00:00:00+0800');
 //const testdate = "2023-03-08T18:09:35.000+08:00"
-const spa1 = (Date.parse("9/17/2009")).valueOf() < (new Date()).valueOf() ? '⏰' : '' ;
+const spa1 = (Date.parse(obj.shifts[0].end_at)).valueOf() < (new Date()).valueOf() ? obj.shifts[0].end_at+'⏰' : obj.shifts[0].end_at ;
  
 
 var paymenth = obj.payment_per_hour ;
