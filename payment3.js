@@ -17,7 +17,7 @@ var obj = JSON.parse(body);
 
 var nowdate = Date('2017-07-09T00:00:00+0800');
 //const testdate = "2023-03-08T18:09:35.000+08:00"
-const spa1 = Date.parse(nowdate).valueOf() < Date.parse('2023-03-08T18:09:35.000+08:00').valueof() ? nowdate + '⏰' : nowdate ;
+const spa1 = (Date.parse("9/17/2009")).valueOf() > (new Date()).valueOf() ? '⏰' : '' ;
  
 
 var paymenth = obj.payment_per_hour ;
