@@ -27,8 +27,8 @@ var obj = JSON.parse(body);
 
 var no = obj.route.deliveries.length ;
 var dmode = obj.courier.dispatching_mode ;
-var nowdate=date(hour, minute, second);
-var status_d = {courier_notified:"進單中", near_pickup:"接近取餐店家", accepted:"已接單", picked_up:"已取餐", left_pickup:"已取餐出發", near_dropoff:"接近放餐位置", dispatched:"預備單"};
+
+var status_d = {courier_notified:"進單中", near_pickup:"接近取餐店家", accepted:"已接單", picked_up:"已取餐", left_pickup:"已取餐出發", near_dropoff:"接近放參位置", dispatched:"預備單"};
 
 if (no === 1 ) {
   //      const status1 = obj.route.deliveries[0].status ;
@@ -41,8 +41,9 @@ if (no === 1 ) {
 //        const tip1 = obj.route.deliveries[0].online_tip /100;
 //        const distance1 = obj.route.deliveries[0].distance ;
 //        const spa1 = obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
-const spa1 = Date.parse(obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8)).valueOf() <= Date.parse(nowdate).valueof() ? obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) + '⏰' : obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
- 
+
+const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8))).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
+  
 //       const dtp1 = obj.route.deliveries[0].distance_to_pickup ;
 
         const pn1 = obj.route.deliveries[0].phone_number ;
