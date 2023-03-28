@@ -63,7 +63,7 @@ const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf()
         const name1 = obj.route.deliveries[0].name ;
         const cash1 = obj.route.deliveries[0].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : obj.route.deliveries[0].cash_collection.collect_at_dropoff /100 ;
 
-        const spa1 = obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
+        const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
 
         const pn1 = obj.route.deliveries[0].phone_number ;
         const items1 = obj.route.deliveries[0].items.length ;
@@ -80,8 +80,7 @@ const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf()
         const name2 = obj.route.deliveries[1].name ;
         const cash2 = obj.route.deliveries[1].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : obj.route.deliveries[1].cash_collection.collect_at_dropoff /100 ;
 
-        const spa2 = obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) ;
- //       const dtp2 = obj.route.deliveries[1].distance_to_pickup ;
+        const spa2 = (Date.parse(obj.route.deliveries[1].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) ;
 
         const pn2 = obj.route.deliveries[1].phone_number ;
         const items2 = obj.route.deliveries[1].items.length ;
@@ -106,7 +105,7 @@ const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf()
         const name1 = obj.route.deliveries[0].name ;
         const cash1 = obj.route.deliveries[0].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : obj.route.deliveries[0].cash_collection.collect_at_dropoff /100 ;
 
-        const spa1 = obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
+        const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
 
         const pn1 = obj.route.deliveries[0].phone_number ;
         const items1 = obj.route.deliveries[0].items.length ;
@@ -124,7 +123,7 @@ const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf()
         const name2 = obj.route.deliveries[1].name ;
         const cash2 = obj.route.deliveries[1].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : obj.route.deliveries[1].cash_collection.collect_at_dropoff /100 ;
 
-        const spa2 = obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) ;
+        const spa2 = (Date.parse(obj.route.deliveries[1].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) ;
 
 
         const pn2 = obj.route.deliveries[1].phone_number ;
@@ -143,7 +142,7 @@ const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf()
         const name3 = obj.route.deliveries[2].name ;
         const cash3 = obj.route.deliveries[2].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : obj.route.deliveries[2].cash_collection.collect_at_dropoff /100 ;
 
-        const spa3 = obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8) ;
+        const spa3 = (Date.parse(obj.route.deliveries[2].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8) ;
 
 
         const pn3 = obj.route.deliveries[2].phone_number ;
@@ -169,7 +168,7 @@ const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf()
         const cash1 = obj.route.deliveries[0].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : obj.route.deliveries[0].cash_collection.collect_at_dropoff /100 ;
 
 
-        const spa1 = obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
+        const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
 
 
         const pn1 = obj.route.deliveries[0].phone_number ;
@@ -189,7 +188,7 @@ const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf()
         const cash2 = obj.route.deliveries[1].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : obj.route.deliveries[1].cash_collection.collect_at_dropoff /100 ;
 
 
-        const spa2 = obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) ;
+        const spa2 = (Date.parse(obj.route.deliveries[1].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) ;
 
 
         const pn2 = obj.route.deliveries[1].phone_number ;
@@ -208,7 +207,7 @@ const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf()
         const cash3 = obj.route.deliveries[2].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : obj.route.deliveries[2].cash_collection.collect_at_dropoff /100 ;
 
 
-        const spa3 = obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8) ;
+        const spa3 = (Date.parse(obj.route.deliveries[2].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8) ;
 
         const pn3 = obj.route.deliveries[2].phone_number ;
         const items3 = obj.route.deliveries[2].items.length ;
@@ -226,7 +225,7 @@ const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf()
         const cash4 = obj.route.deliveries[3].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : obj.route.deliveries[3].cash_collection.collect_at_dropoff /100 ;
 
 
-        const spa4 = obj.route.deliveries[3].scheduled_pickup_at.substr(11, 8) ;
+        const spa4 = (Date.parse(obj.route.deliveries[3].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[3].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[3].scheduled_pickup_at.substr(11, 8) ;
 
 
         const pn4 = obj.route.deliveries[3].phone_number ;
@@ -255,7 +254,7 @@ const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf()
         const name1 = obj.route.deliveries[0].name ;
         const cash1 = obj.route.deliveries[0].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : obj.route.deliveries[0].cash_collection.collect_at_dropoff /100 ;
 
-        const spa1 = obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
+        const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
 
         const pn1 = obj.route.deliveries[0].phone_number ;
         const items1 = obj.route.deliveries[0].items.length ;
@@ -273,7 +272,7 @@ const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf()
         const name2 = obj.route.deliveries[1].name ;
         const cash2 = obj.route.deliveries[1].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : obj.route.deliveries[1].cash_collection.collect_at_dropoff /100 ;
 
-        const spa2 = obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) ;
+        const spa2 = (Date.parse(obj.route.deliveries[1].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) ;
 
 
         const pn2 = obj.route.deliveries[1].phone_number ;
@@ -293,7 +292,7 @@ const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf()
         const cash3 = obj.route.deliveries[2].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : obj.route.deliveries[2].cash_collection.collect_at_dropoff /100 ;
 
 
-        const spa3 = obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8) ;
+        const spa3 = (Date.parse(obj.route.deliveries[2].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8) ;
 
 
         const pn3 = obj.route.deliveries[2].phone_number ;
@@ -313,7 +312,7 @@ const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf()
         const cash4 = obj.route.deliveries[3].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : obj.route.deliveries[3].cash_collection.collect_at_dropoff /100 ;
 
 
-        const spa4 = obj.route.deliveries[3].scheduled_pickup_at.substr(11, 8) ;
+        const spa4 = (Date.parse(obj.route.deliveries[3].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[3].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[3].scheduled_pickup_at.substr(11, 8) ;
 
 
         const pn4 = obj.route.deliveries[3].phone_number ;
@@ -332,7 +331,7 @@ const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf()
         const name5 = obj.route.deliveries[4].name ;
         const cash5 = obj.route.deliveries[4].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : obj.route.deliveries[4].cash_collection.collect_at_dropoff /100 ;
 
-        const spa5 = obj.route.deliveries[4].scheduled_pickup_at.substr(11, 8) ;
+        const spa5 = (Date.parse(obj.route.deliveries[4].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[4].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[4].scheduled_pickup_at.substr(11, 8) ;
 
         const pn5 = obj.route.deliveries[4].phone_number ;
         const items5 = obj.route.deliveries[4].items.length ;
