@@ -2,6 +2,7 @@
 中文狀態
 刷卡圖示
 時間到顯示鬧鐘
+
 [rewrite_local]
 ^https:\/\/tw\.usehurrier\.com\/api\/mobile\/v2\/state\/999999999*\?source\=Delivery\&update\_trigger\=pull\_down\_gesture url script-response-body https://raw.githubusercontent.com/shyulin/460/master/panda01.js
 [mitm]
@@ -30,7 +31,7 @@ if (no === 1 ) {
         const cash1 = obj.route.deliveries[0].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : obj.route.deliveries[0].cash_collection.collect_at_dropoff /100 ;
         const tip1 = obj.route.deliveries[0].online_tip /100;
         const distance1 = obj.route.deliveries[0].distance ;
-        const spa1 = obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
+        const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
         const dtp1 = obj.route.deliveries[0].distance_to_pickup ;
 
         const pn1 = obj.route.deliveries[0].phone_number ;
@@ -43,8 +44,7 @@ if (no === 1 ) {
         const si1 = obj.route.addresses[1].special_instructions ;
         const place1 = obj.route.addresses[1].place_id ;
 
-        const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
-
+        const user1 = `[${no}:1] [${status1}]⏰[${spa1}][${dtp1}]\n${cn1} (${von1}) 🛵${distance1}\n🧟‍♂️${name1}(${pn1}) 💰:${tip1}\n💵:${cash1} ${vendor1} [${items1}]項$${total1}\n📡:[${place1}]\n🏘:(${zip1})${add1}\n🏷:${si1}\n=====` ;
         $notify( no + "單" +dmode , "" , user1);
 
 } else if (no === 2 ) {
