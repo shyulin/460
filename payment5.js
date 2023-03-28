@@ -21,6 +21,6 @@ var gogmap = "https://www.google.com/maps/search/?api=1&map_action=map&query=24.
 
 // const user1 = `時薪:[${paymenth}] \n總距離:[${tdistance}]公里` ;
 
-$notify( "總距離" +tdistance +"公里" , "" , "時薪" +paymenth +"元" +gogmap);
+$notify( "總距離" +tdistance +"公里" , "" , "時薪" +paymenth +"元 " +gogmap);
 
 $done(body);
