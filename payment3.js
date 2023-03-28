@@ -21,6 +21,6 @@ var gogmap = "comgooglemaps://?center=24.07277201,120.5458901&mapmode=streetview
 
 // const user1 = `時薪:[${paymenth}] \n總距離:[${tdistance}]公里` ;
 
-$notify( "總距離" +tdistance +"公里" , "" , "時薪" +paymenth +"元" "\n" +gogmap);
+$notify( "總距離" +tdistance +"公里" , "" , "時薪" +paymenth +"元" +gogmap);
 
 $done(body);
