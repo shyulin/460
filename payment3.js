@@ -17,7 +17,7 @@ var obj = JSON.parse(body);
 
 var paymenth = obj.payment_per_hour ;
 var tdistance = obj.total_distance ;
-var gogmap = "https://www.google.com/maps/search/?api=1&query=24.07277201,120.5458901"
+var gogmap = "https://www.google.com/maps/search/?api=1&query=24.07277201,120.5458901";
 
 // const user1 = `時薪:[${paymenth}] \n總距離:[${tdistance}]公里` ;
 
