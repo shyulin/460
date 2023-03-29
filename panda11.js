@@ -2,7 +2,7 @@
 中文狀態
 刷卡圖示
 時間到顯示鬧鐘
-連結google mpa
+連結google map
 [rewrite_local]
 ^https:\/\/tw\.usehurrier\.com\/api\/mobile\/v2\/state\/999999999*\?source\=Delivery\&update\_trigger\=pull\_down\_gesture url script-response-body https://raw.githubusercontent.com/shyulin/460/master/panda01.js
 [mitm]
@@ -43,7 +43,7 @@ if (no === 1 ) {
         const zip1 = obj.route.addresses[1].zip ;
         const si1 = obj.route.addresses[1].special_instructions ;
         
-        const place1 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=“ +obj.route.addresses[1].place_id ;
+        const place1 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[1].place_id ;
 
         const user1 = `[${no}:1] [${status1}][${spa1}][${dtp1}]\n${cn1} (${von1}) 🛵${distance1}\n🧟‍♂️${name1}(${pn1}) 💰:${tip1}\n💵:${cash1} ${vendor1} [${items1}]項$${total1}\n📡:[${place1}]\n🏘:(${zip1})${add1}\n🏷:${si1}\n=====` ;
         $notify( no + "單" +dmode , "" , user1);
@@ -68,7 +68,7 @@ if (no === 1 ) {
         const add1 = obj.route.addresses[2].address_line_1 ;
         const zip1 = obj.route.addresses[2].zip ;
         const si1 = obj.route.addresses[2].special_instructions ;
-        const place1 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=“ +obj.route.addresses[2].place_id ;
+        const place1 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[2].place_id ;
 
         const status2 = status_d[obj.route.deliveries[1].status];
         const cn2 = obj.route.deliveries[1].confirmation_number ;
@@ -88,7 +88,7 @@ if (no === 1 ) {
         const add2 = obj.route.addresses[3].address_line_1 ;
         const zip2 = obj.route.addresses[3].zip ;
         const si2 = obj.route.addresses[3].special_instructions ;
-        const place2 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=“ +obj.route.addresses[3].place_id ;
+        const place2 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[3].place_id ;
 
         const user1 = `[${no}:1] [${status1}][${spa1}][${dtp1}]\n${cn1} (${von1}) 🛵${distance1}\n🧟‍♂️${name1}(${pn1}) 💰:${tip1}\n💵:${cash1} ${vendor1} [${items1}]項$${total1}\n📡:[${place1}]\n🏘:(${zip1})${add1}\n🏷:${si1}\n=====` ;
         const user2 = `[${no}:2] [${status2}][${spa2}][${dtp2}]\n${cn2} (${von2}) 🛵${distance2}\n🧟‍♂️${name2}(${pn2}) 💰:${tip2}\n💵:${cash2} ${vendor2} [${items2}]項$${total2}\n📡:[${place2}]\n🏘:(${zip2})${add2}\n🏷:${si2}\n=====` ;
@@ -115,7 +115,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const add1 = obj.route.addresses[3].address_line_1 ;
         const zip1 = obj.route.addresses[3].zip ;
         const si1 = obj.route.addresses[3].special_instructions ;
-        const place1 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=“ +obj.route.addresses[3].place_id ;
+        const place1 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[3].place_id ;
 
         const status2 = status_d[obj.route.deliveries[1].status];
         const cn2 = obj.route.deliveries[1].confirmation_number ;
@@ -135,7 +135,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const add2 = obj.route.addresses[4].address_line_1 ;
         const zip2 = obj.route.addresses[4].zip ;
         const si2 = obj.route.addresses[4].special_instructions ;
-        const place2 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=“ +obj.route.addresses[4].place_id ;
+        const place2 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[4].place_id ;
 
         const status3 = status_d[obj.route.deliveries[2].status];
         const cn3 = obj.route.deliveries[2].confirmation_number ;
@@ -155,7 +155,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const add3 = obj.route.addresses[5].address_line_1 ;
         const zip3 = obj.route.addresses[5].zip ;
         const si3 = obj.route.addresses[5].special_instructions ;
-        const place3 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=“ +obj.route.addresses[5].place_id ;
+        const place3 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[5].place_id ;
 
         const user1 = `[${no}:1] [${status1}][${spa1}][${dtp1}]\n${cn1} (${von1}) 🛵${distance1}\n🧟‍♂️${name1}(${pn1}) 💰:${tip1}\n💵:${cash1} ${vendor1} [${items1}]項$${total1}\n📡:[${place1}]\n🏘:(${zip1})${add1}\n🏷:${si1}\n=====` ;
         const user2 = `[${no}:2] [${status2}][${spa2}][${dtp2}]\n${cn2} (${von2}) 🛵${distance2}\n🧟‍♂️${name2}(${pn2}) 💰:${tip2}\n💵:${cash2} ${vendor2} [${items2}]項$${total2}\n📡:[${place2}]\n🏘:(${zip2})${add2}\n🏷:${si2}\n=====` ;
@@ -183,7 +183,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const add1 = obj.route.addresses[4].address_line_1 ;
         const zip1 = obj.route.addresses[4].zip ;
         const si1 = obj.route.addresses[4].special_instructions ;
-        const place1 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=“ +obj.route.addresses[4].place_id ;
+        const place1 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[4].place_id ;
         
         const status2 = status_d[obj.route.deliveries[1].status];
         const cn2 = obj.route.deliveries[1].confirmation_number ;
@@ -204,7 +204,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const add2 = obj.route.addresses[5].address_line_1 ;
         const zip2 = obj.route.addresses[5].zip ;
         const si2 = obj.route.addresses[5].special_instructions ;
-        const place2 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=“ +obj.route.addresses[5].place_id ;
+        const place2 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[5].place_id ;
         
         const status3 = status_d[obj.route.deliveries[3].status];
         const cn3 = obj.route.deliveries[2].confirmation_number ;
@@ -224,7 +224,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const add3 = obj.route.addresses[6].address_line_1 ;
         const zip3 = obj.route.addresses[6].zip ;
         const si3 = obj.route.addresses[6].special_instructions ;
-        const place3 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=“ +obj.route.addresses[6].place_id ;
+        const place3 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[6].place_id ;
 
         const status4 = status_d[obj.route.deliveries[3].status];
         const cn4 = obj.route.deliveries[3].confirmation_number ;
@@ -245,7 +245,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const add4 = obj.route.addresses[7].address_line_1 ;
         const zip4 = obj.route.addresses[7].zip ;
         const si4 = obj.route.addresses[7].special_instructions ;
-        const place4 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=“ +obj.route.addresses[7].place_id ;
+        const place4 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[7].place_id ;
         
         const user1 = `[${no}:1] [${status1}][${spa1}][${dtp1}]\n${cn1} (${von1}) 🛵${distance1}\n🧟‍♂️${name1}(${pn1}) 💰:${tip1}\n💵:${cash1} ${vendor1} [${items1}]項$${total1}\n📡:[${place1}]\n🏘:(${zip1})${add1}\n🏷:${si1}\n=====` ;
         const user2 = `[${no}:2] [${status2}][${spa2}][${dtp2}]\n${cn2} (${von2}) 🛵${distance2}\n🧟‍♂️${name2}(${pn2}) 💰:${tip2}\n💵:${cash2} ${vendor2} [${items2}]項$${total2}\n📡:[${place2}]\n🏘:(${zip2})${add2}\n🏷:${si2}\n=====` ;
@@ -276,7 +276,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const add1 = obj.route.addresses[5].address_line_1 ;
         const zip1 = obj.route.addresses[5].zip ;
         const si1 = obj.route.addresses[5].special_instructions ;
-        const place1 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=“ +obj.route.addresses[5].place_id ;
+        const place1 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[5].place_id ;
 
         const status2 = status_d[obj.route.deliveries[1].status];
         const cn2 = obj.route.deliveries[1].confirmation_number ;
@@ -297,7 +297,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const add2 = obj.route.addresses[6].address_line_1 ;
         const zip2 = obj.route.addresses[6].zip ;
         const si2 = obj.route.addresses[6].special_instructions ;
-        const place2 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=“ +obj.route.addresses[6].place_id ;
+        const place2 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[6].place_id ;
         
         const status3 = status_d[obj.route.deliveries[2].status];
         const cn3 = obj.route.deliveries[2].confirmation_number ;
@@ -318,7 +318,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const add3 = obj.route.addresses[7].address_line_1 ;
         const zip3 = obj.route.addresses[7].zip ;
         const si3 = obj.route.addresses[7].special_instructions ;
-        const place3 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=“ +obj.route.addresses[7].place_id ;
+        const place3 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[7].place_id ;
 
         const status4 = status_d[obj.route.deliveries[3].status];
         const cn4 = obj.route.deliveries[3].confirmation_number ;
@@ -339,7 +339,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const add4 = obj.route.addresses[8].address_line_1 ;
         const zip4 = obj.route.addresses[8].zip ;
         const si4 = obj.route.addresses[8].special_instructions ;
-        const place4 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=“ +obj.route.addresses[8].place_id ;
+        const place4 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[8].place_id ;
 
         const status5 = status_d[obj.route.deliveries[4].status];
         const cn5 = obj.route.deliveries[4].confirmation_number ;
@@ -360,7 +360,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const add5 = obj.route.addresses[9].address_line_1 ;
         const zip5 = obj.route.addresses[9].zip ;
         const si5 = obj.route.addresses[9].special_instructions ;
-        const place5 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=“ +obj.route.addresses[9].place_id ;
+        const place5 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[9].place_id ;
         
         const user1 = `[${no}:1] [${status1}][${spa1}][${dtp1}]\n${cn1} (${von1}) 🛵${distance1}\n🧟‍♂️${name1}(${pn1}) 💰:${tip1}\n💵:${cash1} ${vendor1} [${items1}]項$${total1}\n📡:[${place1}]\n🏘:(${zip1})${add1}\n🏷:${si1}\n=====` ;
         const user2 = `[${no}:2] [${status2}][${spa2}][${dtp2}]\n${cn2} (${von2}) 🛵${distance2}\n🧟‍♂️${name2}(${pn2}) 💰:${tip2}\n💵:${cash2} ${vendor2} [${items2}]項$${total2}\n📡:[${place2}]\n🏘:(${zip2})${add2}\n🏷:${si2}\n=====` ;
