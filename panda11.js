@@ -42,8 +42,8 @@ if (no === 1 ) {
         const add1 = obj.route.addresses[1].address_line_1 ;
         const zip1 = obj.route.addresses[1].zip ;
         const si1 = obj.route.addresses[1].special_instructions ;
-        const place11 = obj.route.addresses[1].place_id;
-        const place1 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=“ +place11 ;
+        
+        const place1 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=“ +obj.route.addresses[1].place_id ;
 
         const user1 = `[${no}:1] [${status1}][${spa1}][${dtp1}]\n${cn1} (${von1}) 🛵${distance1}\n🧟‍♂️${name1}(${pn1}) 💰:${tip1}\n💵:${cash1} ${vendor1} [${items1}]項$${total1}\n📡:[${place1}]\n🏘:(${zip1})${add1}\n🏷:${si1}\n=====` ;
         $notify( no + "單" +dmode , "" , user1);
