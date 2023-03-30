@@ -49,7 +49,7 @@ if (no === 1 ) {
         const zip1 = obj.route.addresses[1].zip === null ? '' : '(' +obj.route.addresses[1].zip +')' ;
         const company1 = obj.route.addresses[1].company === null ? '' : '〖' +obj.route.addresses[1].company +'〗' ;
         const floor1 = obj.route.addresses[1].floor === null ? '' : '【樓層:' +obj.route.addresses[1].floor +' 】';
-        const si1 = obj.route.addresses[1].special_instructions === null ? '無' : obj.route.addresses[1].special_instructions ;
+        const si1 = obj.route.addresses[1].special_instructions === null ? '！仙女白白降駕，妖魔鬼怪速退！' : obj.route.addresses[1].special_instructions ;
         const place1 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[1].place_id ;
 
         const user1 = `[${no}:1] [${status1}]⏳[${spa1}]\n${cn1} (${von1})\n${name1}  📞(${pn1})\n${cash1}\n🛎️:${vendor1} [${items1}]項$${total1}\n🏘:${zip1}${company1}${floor1}${add1}\n📋:${si1}\n[${place1}]\n🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸` ;
