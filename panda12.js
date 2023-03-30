@@ -14,6 +14,10 @@ const Dmode = obj.courier.dispatching_mode ;
 distance_to_pickup
 const dtp1 = obj.route.deliveries[0].distance_to_pickup.substr(0, 5) ;
 const place1 = obj.route.addresses[1].place_id ;
+
+obj.route.addresses[1].company ;
+obj.route.addresses[1].floor ;
+
 */
 
 var body = $response.body;
@@ -29,24 +33,26 @@ if (no === 1 ) {
         const cn1 = obj.route.deliveries[0].confirmation_number ;
         const von1 = obj.route.deliveries[0].vendor_order_number ;
         const name1 = obj.route.deliveries[0].name ;
-        const cash1 = obj.route.deliveries[0].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : obj.route.deliveries[0].cash_collection.collect_at_dropoff /100 ;
+        const cash1 = obj.route.deliveries[0].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳💳💳💳' : '💵:' +obj.route.deliveries[0].cash_collection.collect_at_dropoff /100 ;
         const tip1 = obj.route.deliveries[0].online_tip /100;
         const distance1 = obj.route.deliveries[0].distance ;
         const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
         const dtp1 = obj.route.deliveries[0].distance_to_pickup ;
 
         const pn1 = obj.route.deliveries[0].phone_number ;
-        const items1 = obj.route.deliveries[0].items.length ;
-        const total1 = obj.route.deliveries[0].total /100 ;
+        const items1 = obj.route.deliveries[0].items.length >= 10 ? '😱' +obj.route.deliveries[0].items.length : obj.route.deliveries[0].items.length ;
+        const total1 = obj.route.deliveries[0].total >= 100000 ? '😱' +obj.route.deliveries[0].total /100 : obj.route.deliveries[0].total /100 ;
         const vendor1 = obj.route.deliveries[0].vendor.name ;
 
         const add1 = obj.route.addresses[1].address_line_1 ;
         const zip1 = obj.route.addresses[1].zip ;
+        const company1 = obj.route.addresses[1].company === 'null' ? '' : "[" +obj.route.addresses[1].company ']' ;
+        const floor1 = obj.route.addresses[1].floor === 'null' ? '' : '樓層' +obj.route.addresses[1].floor ;
         const si1 = obj.route.addresses[1].special_instructions === 'null' ? '無' : obj.route.addresses[1].special_instructions ;
         
         const place1 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[1].place_id ;
 
-        const user1 = `[${no}:1] [${status1}][${spa1}][${dtp1}]\n${cn1} (${von1}) 🛵${distance1}\n🧟‍♂️${name1}(${pn1}) 💰:${tip1}\n💵:${cash1} ${vendor1} [${items1}]項$${total1}\n📡:[${place1}]\n🏘:(${zip1})${add1}\n🏷:${si1}\n=====` ;
+        const user1 = `[${no}:1] [${status1}][${spa1}][${dtp1}]\n${cn1} (${von1}) 🛵${distance1}\n🧟‍♂️${name1}(${pn1}) 💰:${tip1}\n${cash1} ${vendor1} [${items1}]項$${total1}\n📡:[${place1}]\n🏘:(${zip1})${company1}${floor1}${add1}\n🏷:${si1}\n=====` ;
         $notify( no + "單" +dmode , "" , user1);
 
 } else if (no === 2 ) {
