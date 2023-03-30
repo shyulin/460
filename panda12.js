@@ -47,8 +47,8 @@ if (no === 1 ) {
         const add1 = obj.route.addresses[1].address_line_1 ;
         const zip1 = obj.route.addresses[1].zip ;
         const company1 = obj.route.addresses[1].company === null ? '' : '[' +obj.route.addresses[1].company +']' ;
-        const floor1 = obj.route.addresses[1].floor === 'null' ? '' : '樓層' +obj.route.addresses[1].floor ;
-        const si1 = obj.route.addresses[1].special_instructions === 'null' ? '無' : obj.route.addresses[1].special_instructions ;
+        const floor1 = obj.route.addresses[1].floor === null ? '' : '樓層' +obj.route.addresses[1].floor ;
+        const si1 = obj.route.addresses[1].special_instructions === null ? '無' : obj.route.addresses[1].special_instructions ;
         
         const place1 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[1].place_id ;
 
