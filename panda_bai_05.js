@@ -76,7 +76,7 @@ if (no === 1 ) {
         const zip1 = obj.route.addresses[2].zip === null ? '' : '(' +obj.route.addresses[2].zip +')' ;
         const company1 = obj.route.addresses[2].company === null ? '' : '〖' +obj.route.addresses[2].company +'〗' ;
         const floor1 = obj.route.addresses[2].floor === null ? '' : '【樓層:' +obj.route.addresses[2].floor +' 】';
-        const si1 = obj.route.addresses[2].special_instructions === null ? '無' : obj.route.addresses[2].special_instructions ;
+        const si1 = obj.route.addresses[2].special_instructions === null ? '！仙女白白降駕，妖魔鬼怪速退！' : obj.route.addresses[2].special_instructions ;
         const place1 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[2].place_id ;
 
         const status2 = status_d[obj.route.deliveries[1].status];
@@ -98,7 +98,7 @@ if (no === 1 ) {
         const zip2 = obj.route.addresses[3].zip === null ? '' : '(' +obj.route.addresses[3].zip +')' ;
         const company2 = obj.route.addresses[3].company === null ? '' : '〖' +obj.route.addresses[3].company +'〗' ;
         const floor2 = obj.route.addresses[3].floor === null ? '' : '【樓層:' +obj.route.addresses[3].floor +' 】';
-        const si2 = obj.route.addresses[3].special_instructions === null ? '無' : obj.route.addresses[3].special_instructions ;
+        const si2 = obj.route.addresses[3].special_instructions === null ? '！仙女白白降駕，妖魔鬼怪速退！' : obj.route.addresses[3].special_instructions ;
         const place2 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[3].place_id ;
 
         const user1 = `[${no}:1] [${status1}]⏳[${spa1}]\n${cn1} (${von1})\n${name1}  📞(${pn1})\n${cash1}\n🛎️:${vendor1} [${items1}]項$${total1}\n🏘:${zip1}${company1}${floor1}${add1}\n📋:${si1}\n[${place1}]\n🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸` ;
@@ -127,7 +127,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const zip1 = obj.route.addresses[3].zip === null ? '' : '(' +obj.route.addresses[3].zip +')' ;
         const company1 = obj.route.addresses[3].company === null ? '' : '〖' +obj.route.addresses[3].company +'〗' ;
         const floor1 = obj.route.addresses[3].floor === null ? '' : '【樓層:' +obj.route.addresses[3].floor +' 】';
-        const si1 = obj.route.addresses[3].special_instructions === null ? '無' : obj.route.addresses[3].special_instructions ;
+        const si1 = obj.route.addresses[3].special_instructions === null ? '仙女白白降駕，妖魔鬼怪速退！' : obj.route.addresses[3].special_instructions ;
         const place1 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[3].place_id ;
 
         const status2 = status_d[obj.route.deliveries[1].status];
