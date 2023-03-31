@@ -306,13 +306,13 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const si1 = obj.route.addresses[5].special_instructions === null ? '無' : obj.route.addresses[5].special_instructions ;
         const place1 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[5].place_id ;
 
-        const tip2 = obj.route.deliveries[1].online_tip === 0 ? '' : '💰:' + obj.route.deliveries[1].online_tip /100 ;
+        const status2 = status_d[obj.route.deliveries[1].status];
         const cn2 = obj.route.deliveries[1].confirmation_number ;
         const von2 = obj.route.deliveries[1].vendor_order_number ;
         const name2 = obj.route.deliveries[1].name ;
         const cash2 = obj.route.deliveries[1].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : '💵:' +obj.route.deliveries[1].cash_collection.collect_at_dropoff /100 ;
 
-        const tip2 = obj.route.deliveries[1].online_tip /100 ;
+        const tip2 = obj.route.deliveries[1].online_tip === 0 ? '' : '💰:' + obj.route.deliveries[1].online_tip /100 ;
         const distance2 = obj.route.deliveries[1].distance >= 1.5 ? '🛵' +obj.route.deliveries[1].distance : obj.route.deliveries[1].distance;
         const spa2 = (Date.parse(obj.route.deliveries[1].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) ;
         const dtp2 = obj.route.deliveries[1].distance_to_pickup ;
