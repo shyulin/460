@@ -282,7 +282,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
                 $notify( no + "單" +dmode , "" , user1 +"\n" +user2 +"\n" +user3 +"\n" +user4);
 } else if (no === 5 ) {
 
-        const status1 = obj.route.deliveries[0].status ;
+        const status1 = status_d[obj.route.deliveries[0].status];
         const cn1 = obj.route.deliveries[0].confirmation_number ;
         const von1 = obj.route.deliveries[0].vendor_order_number ;
         const name1 = obj.route.deliveries[0].name ;
