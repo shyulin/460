@@ -137,7 +137,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const name2 = obj.route.deliveries[1].name ;
         const cash2 = obj.route.deliveries[1].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : '💵:' +obj.route.deliveries[1].cash_collection.collect_at_dropoff /100 ;
         const tip2 = obj.route.deliveries[1].online_tip === 0 ? '' : '💰:' + obj.route.deliveries[1].online_tip /100 ;
-        const distance2 = obj.route.deliveries[0].distance >= 1.5 ? '🛵' +obj.route.deliveries[1].distance : obj.route.deliveries[1].distance ;
+        const distance2 = obj.route.deliveries[1].distance >= 1.5 ? '🛵' +obj.route.deliveries[1].distance : obj.route.deliveries[1].distance ;
         const spa2 = (Date.parse(obj.route.deliveries[1].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) ;
         const dtp2 = obj.route.deliveries[1].distance_to_pickup ;
 
