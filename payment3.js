@@ -15,12 +15,13 @@ var tdistance = obj.total_distance ; 總距離
 var body = $response.body;
 var obj = JSON.parse(body);
 
-var paymenth = "https://www.google.com/maps/search/?api=1&map_action=pano&query=24.07277201,120.5458901 " +obj.payment_per_hour ;
+var paymenth = obj.payment_per_hour ;
 var tdistance = obj.total_distance ;
-//var gogmap = "https://www.google.com/maps/search/?api=1&map_action=pano&query=24.07277201,120.5458901";
+
+var endtime = obj.shifts.141265978.end_at ;
 
 // const user1 = `時薪:[${paymenth}] \n總距離:[${tdistance}]公里` ;
 
-$notify( "總距離" +tdistance +"公里" , "" , "時薪" +paymenth +"元 ");
+$notify( "總距離" +tdistance +"公里" , "" , "時薪" +paymenth +"元" + endtime);
 
 $done(body);
