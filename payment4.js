@@ -18,7 +18,7 @@ var obj = JSON.parse(body);
 var paymenth = obj.payment_per_hour ;
 var tdistance = obj.total_distance ;
 
-var endtime = obj.shifts[0].141265978.end_at ;
+var endtime = obj.shifts[0].['141265978'].end_at ;
 
 // const user1 = `時薪:[${paymenth}] \n總距離:[${tdistance}]公里` ;
 
