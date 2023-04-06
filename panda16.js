@@ -7,7 +7,7 @@
 增加樓層公司 品項 金額
 小費隱藏
 改圖示
-時間?
+時間錯誤null
 [rewrite_local]
 ^https:\/\/tw\.usehurrier\.com\/api\/mobile\/v2\/state\/999999999*\?source\=Delivery\&update\_trigger\=pull\_down\_gesture url script-response-body https://raw.githubusercontent.com/shyulin/460/master/panda01.js
 [mitm]
@@ -21,7 +21,6 @@ const place1 = obj.route.addresses[1].place_id ;
 
 obj.route.addresses[1].company ;
 obj.route.addresses[1].floor ;
-const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[0].scheduled_pickup_at.getHours() +':' +obj.route.deliveries[0].scheduled_pickup_at.getMinutes() +':' +obj.route.deliveries[0].scheduled_pickup_at.getSeconds() +'⏰' : obj.route.deliveries[0].scheduled_pickup_at.getHours() +':' +obj.route.deliveries[0].scheduled_pickup_at.getMinutes() +':' +obj.route.deliveries[0].scheduled_pickup_at.getSeconds() ;
 
 */
 
@@ -41,9 +40,8 @@ if (no === 1 ) {
         const cash1 = obj.route.deliveries[0].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : '💵:' +obj.route.deliveries[0].cash_collection.collect_at_dropoff /100 ;
         const tip1 = obj.route.deliveries[0].online_tip === 0 ? '' : '💰:' + obj.route.deliveries[0].online_tip /100 ;
         const distance1 = obj.route.deliveries[0].distance >= 3.5 ? '🛵' +obj.route.deliveries[0].distance : obj.route.deliveries[0].distance;
-        const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).getHours()+'⏰' : (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf();
-   //    const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[0].scheduled_pickup_at.getHours() +':' +obj.route.deliveries[0].scheduled_pickup_at.getMinutes() +':' +obj.route.deliveries[0].scheduled_pickup_at.getSeconds() +'⏰' : obj.route.deliveries[0].scheduled_pickup_at.getHours() +':' +obj.route.deliveries[0].scheduled_pickup_at.getMinutes() +':' +obj.route.deliveries[0].scheduled_pickup_at.getSeconds() ;
-     //   const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).getHours() +':' +(Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).getMinutes() +':' +(Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).getSeconds() +'⏰' : (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).getHours() +':' +(Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).getMinutes() +':' +(Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).getSeconds() ;
+        const spaa1 = obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) !== null ? obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) : '重刷一次' ;
+        const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? spaa1 +'⏰' : spaa1 ;
         const dtp1 = obj.route.deliveries[0].distance_to_pickup ;
 
         const pn1 = obj.route.deliveries[0].phone_number ;
@@ -71,7 +69,8 @@ if (no === 1 ) {
         const cash1 = obj.route.deliveries[0].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : '💵:' +obj.route.deliveries[0].cash_collection.collect_at_dropoff /100 ;
         const tip1 = obj.route.deliveries[0].online_tip === 0 ? '' : '💰:' + obj.route.deliveries[0].online_tip /100 ;
         const distance1 = obj.route.deliveries[0].distance >= 3.5 ? '🛵' +obj.route.deliveries[0].distance : obj.route.deliveries[0].distance ;
-        const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
+        const spaa1 = obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) !== null ? obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) : '重刷一次' ;
+        const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? spaa1 +'⏰' : spaa1 ;
         const dtp1 = obj.route.deliveries[0].distance_to_pickup ;
 
         const pn1 = obj.route.deliveries[0].phone_number ;
@@ -93,7 +92,8 @@ if (no === 1 ) {
         const cash2 = obj.route.deliveries[1].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : '💵:' +obj.route.deliveries[1].cash_collection.collect_at_dropoff /100 ;
         const tip2 = obj.route.deliveries[1].online_tip === 0 ? '' : '💰:' + obj.route.deliveries[1].online_tip /100 ;
         const distance2 = obj.route.deliveries[1].distance >= 3.5 ? '🛵' +obj.route.deliveries[1].distance : obj.route.deliveries[1].distance ;
-        const spa2 = (Date.parse(obj.route.deliveries[1].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) ;
+        const spaa2 = obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) !== null ? obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) : '重刷一次' ;
+        const spa2 = (Date.parse(obj.route.deliveries[1].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? spaa2 +'⏰' : spaa2 ;
         const dtp2 = obj.route.deliveries[1].distance_to_pickup ;
 
         const pn2 = obj.route.deliveries[1].phone_number ;
@@ -121,7 +121,8 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const cash1 = obj.route.deliveries[0].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : '💵:' +obj.route.deliveries[0].cash_collection.collect_at_dropoff /100 ;
         const tip1 = obj.route.deliveries[0].online_tip === 0 ? '' : '💰:' + obj.route.deliveries[0].online_tip /100 ;
         const distance1 = obj.route.deliveries[0].distance >= 3.5 ? '🛵' +obj.route.deliveries[0].distance : obj.route.deliveries[0].distance ;
-        const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
+        const spaa1 = obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) !== null ? obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) : '重刷一次' ;
+        const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? spaa1 +'⏰' : spaa1 ;
         const dtp1 = obj.route.deliveries[0].distance_to_pickup ;
 
         const pn1 = obj.route.deliveries[0].phone_number ;
@@ -143,7 +144,8 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const cash2 = obj.route.deliveries[1].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : '💵:' +obj.route.deliveries[1].cash_collection.collect_at_dropoff /100 ;
         const tip2 = obj.route.deliveries[1].online_tip === 0 ? '' : '💰:' + obj.route.deliveries[1].online_tip /100 ;
         const distance2 = obj.route.deliveries[1].distance >= 3.5 ? '🛵' +obj.route.deliveries[1].distance : obj.route.deliveries[1].distance ;
-        const spa2 = (Date.parse(obj.route.deliveries[1].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) ;
+        const spaa2 = obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) !== null ? obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) : '重刷一次' ;
+        const spa2 = (Date.parse(obj.route.deliveries[1].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? spaa2 +'⏰' : spaa2 ;
         const dtp2 = obj.route.deliveries[1].distance_to_pickup ;
 
         const pn2 = obj.route.deliveries[1].phone_number ;
@@ -165,7 +167,8 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const cash3 = obj.route.deliveries[2].cash_collection.collect_at_dropoff ==  0 ? '💳💳💳' : '💵:' +obj.route.deliveries[2].cash_collection.collect_at_dropoff /100 ;
         const tip3 = obj.route.deliveries[2].online_tip === 0 ? '' : '💰:' + obj.route.deliveries[2].online_tip /100 ;
         const distance3 = obj.route.deliveries[2].distance >= 3.5 ? '🛵' +obj.route.deliveries[2].distance : obj.route.deliveries[2].distance;
-        const spa3 = (Date.parse(obj.route.deliveries[2].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8) ;
+        const spaa3 = obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8) !== null ? obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8) : '重刷一次' ;
+        const spa3 = (Date.parse(obj.route.deliveries[2].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? spaa3 +'⏰' : spaa3 ;
         const dtp3 = obj.route.deliveries[2].distance_to_pickup ;
 
         const pn3 = obj.route.deliveries[2].phone_number ;
@@ -194,7 +197,8 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
 
         const tip1 = obj.route.deliveries[0].online_tip === 0 ? '' : '💰:' + obj.route.deliveries[0].online_tip /100 ;
         const distance1 = obj.route.deliveries[0].distance >= 3.5 ? '🛵' +obj.route.deliveries[0].distance : obj.route.deliveries[0].distance;
-        const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
+        const spaa1 = obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) !== null ? obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) : '重刷一次' ;
+        const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? spaa1 +'⏰' : spaa1 ;
         const dtp1 = obj.route.deliveries[0].distance_to_pickup ;
 
         const pn1 = obj.route.deliveries[0].phone_number ;
@@ -217,7 +221,8 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
 
         const tip2 = obj.route.deliveries[1].online_tip === 0 ? '' : '💰:' + obj.route.deliveries[1].online_tip /100 ;
         const distance2 = obj.route.deliveries[1].distance >= 3.5 ? '🛵' +obj.route.deliveries[1].distance : obj.route.deliveries[1].distance;
-        const spa2 = (Date.parse(obj.route.deliveries[1].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) ;
+        const spaa2 = obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) !== null ? obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) : '重刷一次' ;
+        const spa2 = (Date.parse(obj.route.deliveries[1].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? spaa2 +'⏰' : spaa2 ;
         const dtp2 = obj.route.deliveries[1].distance_to_pickup ;
 
         const pn2 = obj.route.deliveries[1].phone_number ;
@@ -240,7 +245,8 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
 
         const tip3 = obj.route.deliveries[2].online_tip === 0 ? '' : '💰:' + obj.route.deliveries[2].online_tip /100 ;
         const distance3 = obj.route.deliveries[2].distance >= 3.5 ? '🛵' +obj.route.deliveries[2].distance : obj.route.deliveries[2].distance;
-        const spa3 = (Date.parse(obj.route.deliveries[2].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8) ;
+        const spaa3 = obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8) !== null ? obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8) : '重刷一次' ;
+        const spa3 = (Date.parse(obj.route.deliveries[2].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? spaa3 +'⏰' : spaa3 ;
         const dtp3 = obj.route.deliveries[2].distance_to_pickup ;
         const pn3 = obj.route.deliveries[2].phone_number ;
         const items3 = obj.route.deliveries[2].items.length >= 10 ? '🚚' +obj.route.deliveries[2].items.length : obj.route.deliveries[2].items.length ;
@@ -262,7 +268,8 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
 
         const tip4 = obj.route.deliveries[3].online_tip === 0 ? '' : '💰:' + obj.route.deliveries[3].online_tip /100 ;
         const distance4 = obj.route.deliveries[3].distance >= 3.5 ? '🛵' +obj.route.deliveries[3].distance : obj.route.deliveries[3].distance;
-        const spa4 = (Date.parse(obj.route.deliveries[3].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[3].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[3].scheduled_pickup_at.substr(11, 8) ;
+        const spaa4 = obj.route.deliveries[3].scheduled_pickup_at.substr(11, 8) !== null ? obj.route.deliveries[3].scheduled_pickup_at.substr(11, 8) : '重刷一次' ;
+        const spa4 = (Date.parse(obj.route.deliveries[3].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? spaa4 +'⏰' : spaa4 ;
         const dtp4 = obj.route.deliveries[3].distance_to_pickup ;
 
         const pn4 = obj.route.deliveries[3].phone_number ;
@@ -293,7 +300,8 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
 
         const tip1 = obj.route.deliveries[0].online_tip === 0 ? '' : '💰:' + obj.route.deliveries[0].online_tip /100 ;
         const distance1 = obj.route.deliveries[0].distance >= 3.5 ? '🛵' +obj.route.deliveries[0].distance : obj.route.deliveries[0].distance;
-        const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) ;
+        const spaa1 = obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) !== null ? obj.route.deliveries[0].scheduled_pickup_at.substr(11, 8) : '重刷一次' ;
+        const spa1 = (Date.parse(obj.route.deliveries[0].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? spaa1 +'⏰' : spaa1 ;
         const dtp1 = obj.route.deliveries[0].distance_to_pickup ;
 
         const pn1 = obj.route.deliveries[0].phone_number ;
@@ -316,7 +324,8 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
 
         const tip2 = obj.route.deliveries[1].online_tip === 0 ? '' : '💰:' + obj.route.deliveries[1].online_tip /100 ;
         const distance2 = obj.route.deliveries[1].distance >= 3.5 ? '🛵' +obj.route.deliveries[1].distance : obj.route.deliveries[1].distance;
-        const spa2 = (Date.parse(obj.route.deliveries[1].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) ;
+        const spaa2 = obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) !== null ? obj.route.deliveries[1].scheduled_pickup_at.substr(11, 8) : '重刷一次' ;
+        const spa2 = (Date.parse(obj.route.deliveries[1].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? spaa2 +'⏰' : spaa2 ;
         const dtp2 = obj.route.deliveries[1].distance_to_pickup ;
 
         const pn2 = obj.route.deliveries[1].phone_number ;
@@ -339,7 +348,8 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
 
         const tip3 = obj.route.deliveries[2].online_tip === 0 ? '' : '💰:' + obj.route.deliveries[2].online_tip /100 ;
         const distance3 = obj.route.deliveries[2].distance >= 3.5 ? '🛵' +obj.route.deliveries[2].distance : obj.route.deliveries[2].distance;
-        const spa3 = (Date.parse(obj.route.deliveries[2].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8) ;
+        const spaa3 = obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8) !== null ? obj.route.deliveries[2].scheduled_pickup_at.substr(11, 8) : '重刷一次' ;
+        const spa3 = (Date.parse(obj.route.deliveries[2].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? spaa3 +'⏰' : spaa3 ;
         const dtp3 = obj.route.deliveries[2].distance_to_pickup ;
 
         const pn3 = obj.route.deliveries[2].phone_number ;
@@ -362,7 +372,8 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
 
         const tip4 = obj.route.deliveries[3].online_tip === 0 ? '' : '💰:' + obj.route.deliveries[3].online_tip /100 ;
         const distance4 = obj.route.deliveries[3].distance >= 3.5 ? '🛵' +obj.route.deliveries[3].distance : obj.route.deliveries[3].distance;
-        const spa4 = (Date.parse(obj.route.deliveries[3].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[3].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[3].scheduled_pickup_at.substr(11, 8) ;
+        const spaa4 = obj.route.deliveries[3].scheduled_pickup_at.substr(11, 8) !== null ? obj.route.deliveries[3].scheduled_pickup_at.substr(11, 8) : '重刷一次' ;
+        const spa4 = (Date.parse(obj.route.deliveries[3].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? spaa4 +'⏰' : spaa4 ;
         const dtp4 = obj.route.deliveries[3].distance_to_pickup ;
 
         const pn4 = obj.route.deliveries[3].phone_number ;
@@ -385,7 +396,8 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
 
         const tip5 = obj.route.deliveries[4].online_tip === 0 ? '' : '💰:' + obj.route.deliveries[4].online_tip /100 ;
         const distance5 = obj.route.deliveries[4].distance >= 3.5 ? '🛵' +obj.route.deliveries[4].distance : obj.route.deliveries[4].distance;
-        const spa5 = (Date.parse(obj.route.deliveries[4].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? obj.route.deliveries[4].scheduled_pickup_at.substr(11, 8)+'⏰' : obj.route.deliveries[4].scheduled_pickup_at.substr(11, 8) ;
+        const spaa5 = obj.route.deliveries[4].scheduled_pickup_at.substr(11, 8) !== null ? obj.route.deliveries[4].scheduled_pickup_at.substr(11, 8) : '重刷一次' ;
+        const spa5 = (Date.parse(obj.route.deliveries[4].scheduled_pickup_at)).valueOf() < (new Date()).valueOf() ? spaa5 +'⏰' : spaa5 ;
         const dtp5 = obj.route.deliveries[4].distance_to_pickup ;
 
         const pn5 = obj.route.deliveries[4].phone_number ;
