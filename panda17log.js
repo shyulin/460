@@ -60,7 +60,7 @@ if (no === 1 ) {
         const user1 = `[${no}:1] [${status1}][${spa1}][${dtp1}]\n${cn1} (${von1}) [${distance1}]\n🗿${name1} 📞(${pn1}) ${tip1}\n${cash1} \n🛎：【${vendor1}】 [${items1}]項 ＄：${total1}\n🏠：${zip1}${company1}${floor1}${add1}\n📝：${si1}\n${place1}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
  
         $notify( no + "單" +dmode , "" , user1);
-        console.log(dmode"\n" +user1);
+        console.log(dmode ,"\n" ,user1);
 
 } else if (no === 2 ) {
 
@@ -114,7 +114,7 @@ if (no === 1 ) {
         const user2 = `[${no}:2] [${status2}][${spa2}][${dtp2}]\n${cn2} (${von2}) [${distance2}]\n🗿${name2} 📞(${pn2}) ${tip2}\n${cash2} \n🛎：【${vendor2}】 [${items2}]項 ＄：${total2}\n🏠：${zip2}${company2}${floor2}${add2}\n📝：${si2}\n${place2}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
         
         $notify( no + "單" +dmode , "" , user1 +"\n" +user2);
-        console.log(dmode"\n" +user1 +"\n" +user2);
+        console.log(dmode ,"\n" ,user1 ,"\n" ,user2);
 
 } else if (no === 3 ) {
 const cn1 = obj.route.deliveries[0].confirmation_number ;
@@ -191,7 +191,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const user3 = `[${no}:3] [${status3}][${spa3}][${dtp3}]\n${cn3} (${von3}) [${distance3}]\n🗿${name3} 📞(${pn3}) ${tip3}\n${cash3} \n🛎：【${vendor3}】 [${items3}]項 ＄：${total3}\n🏠：${zip3}${company3}${floor3}${add3}\n📝：${si3}\n${place3}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
 
         $notify( no + "單" +dmode , "" , user1 +"\n" +user2 +"\n" +user3);
-        console.log(dmode"\n" +user1 +"\n" +user2 +"\n" +user3);
+        console.log(dmode ,"\n" ,user1 +"\n" ,user2 ,"\n" ,user3);
 
 } else if (no === 4 ) {
         const status1 = status_d[obj.route.deliveries[0].status];
@@ -295,7 +295,7 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const user4 = `[${no}:4] [${status4}][${spa4}][${dtp4}]\n${cn4} (${von4}) [${distance4}]\n🗿${name4} 📞(${pn4}) ${tip4}\n${cash4} \n🛎：【${vendor4}】 [${items4}]項 ＄：${total4}\n🏠：${zip4}${company4}${floor4}${add4}\n📝：${si4}\n${place4}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
         
         $notify( no + "單" +dmode , "" , user1 +"\n" +user2 +"\n" +user3 +"\n" +user4);
-        console.log(dmode"\n" +user1 +"\n" +user2 +"\n" +user3 +"\n" +user4);
+        console.log(dmode ,"\n" +user1 ,"\n" ,user2 ,"\n" ,user3 ,"\n" ,user4);
 } else if (no === 5 ) {
 
         const status1 = status_d[obj.route.deliveries[0].status];
@@ -425,6 +425,6 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const user5 = `[${no}:5] [${status5}][${spa5}][${dtp5}]\n${cn5} (${von5}) [${distance5}]\n🗿${name5} 📞(${pn5}) ${tip5}\n${cash5} \n🛎：【${vendor5}】 [${items5}]項 ＄：${total5}\n🏠：${zip5}${company5}${floor5}${add5}\n📝：${si5}\n${place5}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
 
         $notify( no + "單" +dmode , "" , user1 +"\n" +user2 +"\n" +user3 +"\n" +user4 +"\n" +user5);
-        console.log(dmode"\n" +user1 +"\n" +user2 +"\n" +user3 +"\n" +user4 +"\n" +user5);
+        console.log(dmode ,"\n" ,user1 ,"\n" ,user2 ,"\n" ,user3 ,"\n" ,user4 ,"\n" ,user5);
 }
 $done(body);
