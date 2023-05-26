@@ -4,5 +4,5 @@ hostname = tw.usehurrier.com, *.googlevideo.com, youtubei.googleapis.com
 ^https:\/\/tw\.usehurrier\.com\/api\/rooster-payments\/v1\/payments\/daily\-summary\?date\=\d{4}\-\d{2}\-\d{2}\&city\_id\=\d{1}\&with\_time\_zone\=Asia\%2FTaipei url script-response-body https://raw.githubusercontent.com/shyulin/460/master/payment.js
 
 ;youtube
-^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad url reject-img
-^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting)\? url script-response-body https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/YouTube/YouTube_remove_ads.js
+;^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad url reject-img
+;^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting)\? url script-response-body https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/YouTube/YouTube_remove_ads.js
