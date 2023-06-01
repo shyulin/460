@@ -1,4 +1,4 @@
-/* panda_bai_09.js
+/* panda_bai_08.js
 中文狀態
 刷卡圖示
 時間到顯示鬧鐘
