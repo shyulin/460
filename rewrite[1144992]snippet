@@ -1,6 +1,6 @@
 ; 白白 hostname line is optional.
 hostname = tw.usehurrier.com
-;^https:\/\/tw\.usehurrier\.com\/api\/mobile\/v2\/state\/1144992\?source\=Delivery\&update\_trigger\=pull\_down\_gesture url script-response-body https://raw.githubusercontent.com/shyulin/460/master/panda_bai_08.js
+;^https:\/\/tw\.usehurrier\.com\/api\/mobile\/v2\/state\/1144992\?source\=Delivery\&update\_trigger\=pull\_down\_gesture url script-response-body https://raw.githubusercontent.com/shyulin/460/master/panda_bai_10.js
 ^https:\/\/tw\.usehurrier\.com\/api\/mobile\/v2\/state\/1144992\?source\=Delivery\&update\_trigger\=* url script-response-body https://raw.githubusercontent.com/shyulin/460/master/panda_bai_07.js
 
 
