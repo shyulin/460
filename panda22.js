@@ -12,6 +12,8 @@
 店家已完成餐點時間
 時間錯誤 刪除 spaa1 時間區隔
 店家未接單:
+客戶地址
+客戶地圖
 substr(11, 8) 改 substring(11, 19)
 [rewrite_local]
 ^https:\/\/tw\.usehurrier\.com\/api\/mobile\/v2\/state\/999999999*\?source\=Delivery\&update\_trigger\=pull\_down\_gesture url script-response-body https://raw.githubusercontent.com/shyulin/460/master/panda01.js
@@ -56,12 +58,12 @@ if (no === 1 ) {
         const total1 = obj.route.deliveries[0].total >= 100000 ? '😱' +obj.route.deliveries[0].total /100 : obj.route.deliveries[0].total /100 ;
         const vendor1 = obj.route.deliveries[0].vendor.name ;
 
-        const add1 = obj.route.addresses[1].address_line_1 ;
-        const zip1 = obj.route.addresses[1].zip === null ? '' : '(' +obj.route.addresses[1].zip +')' ;
+        const add1 = obj.route.addresses[1].primary ;
+;        const zip1 = obj.route.addresses[1].zip === null ? '' : '(' +obj.route.addresses[1].zip +')' ;
         const company1 = obj.route.addresses[1].company === null ? '' : '〖' +obj.route.addresses[1].company +'〗' ;
-        const floor1 = obj.route.addresses[1].floor === null ? '' : '【樓層:' +obj.route.addresses[1].floor +' 】';
+;        const floor1 = obj.route.addresses[1].floor === null ? '' : '【樓層:' +obj.route.addresses[1].floor +' 】';
         const si1 = obj.route.addresses[1].special_instructions === null ? '無' : obj.route.addresses[1].special_instructions ;
-        const place1 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[1].place_id ;
+        const place1 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[1].latitude +',' +obj.route.addresses[1].longitude ;
 
         const user1 = `[${no}:1] [${status1}][${spa1}][${dtp1}]${fra1}\n${cn1} (${von1}) [${distance1}]\n🗿${name1} (${pn1}) ${tip1}\n${cash1} \n🛎：【${vendor1}】 [${items1}]項 ＄：${total1}\n🏠：${zip1}${company1}${floor1}${add1}\n📝：${si1}\n${place1}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
  
