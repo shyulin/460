@@ -65,7 +65,7 @@ if (no === 1 ) {
         const si1 = obj.route.addresses[1].special_instructions === null ? '無' : obj.route.addresses[1].special_instructions ;
         const place1 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[1].latitude +',' +obj.route.addresses[1].longitude ;
 
-        const user1 = `[${no}:1] [${status1}][${spa1}][${dtp1}]${fra1}\n${cn1} (${von1}) [${distance1}]\n🗿${name1} (${pn1}) ${tip1}\n${cash1} \n🛎：【${vendor1}】 [${items1}]項 ＄：${total1}\n🏠：${zip1}${company1}${floor1}${add1}\n📝：${si1}\n${place1}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
+        const user1 = `[${no}:1] [${status1}][${spa1}][${dtp1}]${fra1}\n${cn1} (${von1}) [${distance1}]\n🗿${name1} (${pn1}) ${tip1}\n${cash1} \n🛎：【${vendor1}】 [${items1}]項 ＄：${total1}\n🏠：${company1}${add1}\n📝：${si1}\n${place1}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
  
         $notify( no + "單" +dmode , "" , user1);
 
@@ -88,12 +88,13 @@ if (no === 1 ) {
         const total1 = obj.route.deliveries[0].total >= 100000 ? '😱' +obj.route.deliveries[0].total /100 : obj.route.deliveries[0].total /100 ;
         const vendor1 = obj.route.deliveries[0].vendor.name ;
 
-        const add1 = obj.route.addresses[2].address_line_1 ;
-        const zip1 = obj.route.addresses[2].zip === null ? '' : '(' +obj.route.addresses[2].zip +')' ;
-        const company1 = obj.route.addresses[2].company === null ? '' : '〖' +obj.route.addresses[2].company +'〗' ;
-        const floor1 = obj.route.addresses[2].floor === null ? '' : '【樓層:' +obj.route.addresses[2].floor +' 】';
-        const si1 = obj.route.addresses[2].special_instructions === null ? '無' : obj.route.addresses[2].special_instructions ;
-        const place1 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[2].place_id ;
+        const add1 = obj.route.addresses[1].primary ;
+;        const zip1 = obj.route.addresses[1].zip === null ? '' : '(' +obj.route.addresses[1].zip +')' ;
+        const company1 = obj.route.addresses[1].company === null ? '' : '〖' +obj.route.addresses[1].company +'〗' ;
+;        const floor1 = obj.route.addresses[1].floor === null ? '' : '【樓層:' +obj.route.addresses[1].floor +' 】';
+        const si1 = obj.route.addresses[1].special_instructions === null ? '無' : obj.route.addresses[1].special_instructions ;
+        const place1 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[1].latitude +',' +obj.route.addresses[1].longitude ;
+
 
         const status2 = status_d[obj.route.deliveries[1].status];
         const cn2 = obj.route.deliveries[1].confirmation_number ;
@@ -112,15 +113,16 @@ if (no === 1 ) {
         const total2 = obj.route.deliveries[1].total >= 100000 ? '😱' +obj.route.deliveries[1].total /100 : obj.route.deliveries[1].total /100 ;
         const vendor2 = obj.route.deliveries[1].vendor.name ;
 
-        const add2 = obj.route.addresses[3].address_line_1 ;
-        const zip2 = obj.route.addresses[3].zip === null ? '' : '(' +obj.route.addresses[3].zip +')' ;
+        const add2 = obj.route.addresses[3].primary ;
+;        const zip2 = obj.route.addresses[3].zip === null ? '' : '(' +obj.route.addresses[3].zip +')' ;
         const company2 = obj.route.addresses[3].company === null ? '' : '〖' +obj.route.addresses[3].company +'〗' ;
-        const floor2 = obj.route.addresses[3].floor === null ? '' : '【樓層:' +obj.route.addresses[3].floor +' 】';
+;        const floor2 = obj.route.addresses[3].floor === null ? '' : '【樓層:' +obj.route.addresses[3].floor +' 】';
         const si2 = obj.route.addresses[3].special_instructions === null ? '無' : obj.route.addresses[3].special_instructions ;
-        const place2 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[3].place_id ;
+        const place2 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[3].latitude +',' +obj.route.addresses[1].longitude ;
 
-        const user1 = `[${no}:1] [${status1}][${spa1}][${dtp1}]${fra1}\n${cn1} (${von1}) [${distance1}]\n🗿${name1} (${pn1}) ${tip1}\n${cash1} \n🛎：【${vendor1}】 [${items1}]項 ＄：${total1}\n🏠：${zip1}${company1}${floor1}${add1}\n📝：${si1}\n${place1}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
-        const user2 = `[${no}:2] [${status2}][${spa2}][${dtp2}]${fra2}\n${cn2} (${von2}) [${distance2}]\n🗿${name2} (${pn2}) ${tip2}\n${cash2} \n🛎：【${vendor2}】 [${items2}]項 ＄：${total2}\n🏠：${zip2}${company2}${floor2}${add2}\n📝：${si2}\n${place2}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
+
+        const user1 = `[${no}:1] [${status1}][${spa1}][${dtp1}]${fra1}\n${cn1} (${von1}) [${distance1}]\n🗿${name1} (${pn1}) ${tip1}\n${cash1} \n🛎：【${vendor1}】 [${items1}]項 ＄：${total1}\n🏠：${company1}${add1}\n📝：${si1}\n${place1}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
+        const user2 = `[${no}:2] [${status2}][${spa2}][${dtp2}]${fra2}\n${cn2} (${von2}) [${distance2}]\n🗿${name2} (${pn2}) ${tip2}\n${cash2} \n🛎：【${vendor2}】 [${items2}]項 ＄：${total2}\n🏠：${company2}${add2}\n📝：${si2}\n${place2}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
         
         $notify( no + "單" +dmode , "" , user1 +"\n" +user2);
 
