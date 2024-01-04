@@ -123,8 +123,8 @@ if (no === 1 ) {
         const place2 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[3].latitude +',' +obj.route.addresses[3].longitude ;
 
 
-        const user1 = `[${no}:1] [${status1}]${fra1}[${spa1}][${dtp1}]\n${cn1} (${von1}) [${distance1}]\n🗿${name1} (${pn1}) ${tip1}\n${cash1} \n🛎：【${vendor1}】 [${items1}]項 ＄：${total1}\n🏠：${company1}${secondary1}${add1}\n📝：${si1}\n${place1}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
-        const user2 = `[${no}:2] [${status2}]${fra2}[${spa2}][${dtp2}]\n${cn2} (${von2}) [${distance2}]\n🗿${name2} (${pn2}) ${tip2}\n${cash2} \n🛎：【${vendor2}】 [${items2}]項 ＄：${total2}\n🏠：${company2}${secondary2}${add2}\n📝：${si2}\n${place2}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
+        const user1 = `[${no}:1] [${status1}]${fra1}[${spa1}][${dtp1}]\n${place1}\n${cn1} (${von1}) [${distance1}]\n🗿${name1} (${pn1}) ${tip1}\n${cash1} \n🛎：【${vendor1}】 [${items1}]項 ＄：${total1}\n🏠：${company1}${secondary1}${add1}\n📝：${si1}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
+        const user2 = `[${no}:2] [${status2}]${fra2}[${spa2}][${dtp2}]\n${place2}\n${cn2} (${von2}) [${distance2}]\n🗿${name2} (${pn2}) ${tip2}\n${cash2} \n🛎：【${vendor2}】 [${items2}]項 ＄：${total2}\n🏠：${company2}${secondary2}${add2}\n📝：${si2}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
         
         $notify( no + "單" +dmode , "" , user1 +"\n" +user2);
 
@@ -201,9 +201,9 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const si3 = obj.route.addresses[5].special_instructions === '' ? '無' : obj.route.addresses[5].special_instructions ;
         const place3 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[5].latitude +',' +obj.route.addresses[5].longitude ;
 
-        const user1 = `[${no}:1] [${status1}]${fra1}[${spa1}][${dtp1}]\n${cn1} (${von1}) [${distance1}]\n🗿${name1} (${pn1}) ${tip1}\n${cash1} \n🛎：【${vendor1}】 [${items1}]項 ＄：${total1}\n🏠：${company1}${secondary1}${add1}\n📝：${si1}\n${place1}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
-        const user2 = `[${no}:2] [${status2}]${fra2}[${spa2}][${dtp2}]\n${cn2} (${von2}) [${distance2}]\n🗿${name2} (${pn2}) ${tip2}\n${cash2} \n🛎：【${vendor2}】 [${items2}]項 ＄：${total2}\n🏠：${company2}${secondary2}${add2}\n📝：${si2}\n${place2}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
-        const user3 = `[${no}:3] [${status3}]${fra3}[${spa3}][${dtp3}]\n${cn3} (${von3}) [${distance3}]\n🗿${name3} (${pn3}) ${tip3}\n${cash3} \n🛎：【${vendor3}】 [${items3}]項 ＄：${total3}\n🏠：${company3}${secondary3}${add3}\n📝：${si3}\n${place3}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
+        const user1 = `[${no}:1] [${status1}]${fra1}[${spa1}][${dtp1}]\n${place1}\n${cn1} (${von1}) [${distance1}]\n🗿${name1} (${pn1}) ${tip1}\n${cash1} \n🛎：【${vendor1}】 [${items1}]項 ＄：${total1}\n🏠：${company1}${secondary1}${add1}\n📝：${si1}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
+        const user2 = `[${no}:2] [${status2}]${fra2}[${spa2}][${dtp2}]\n${place2}\n${cn2} (${von2}) [${distance2}]\n🗿${name2} (${pn2}) ${tip2}\n${cash2} \n🛎：【${vendor2}】 [${items2}]項 ＄：${total2}\n🏠：${company2}${secondary2}${add2}\n📝：${si2}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
+        const user3 = `[${no}:3] [${status3}]${fra3}[${spa3}][${dtp3}]\n${place3}\n${cn3} (${von3}) [${distance3}]\n🗿${name3} (${pn3}) ${tip3}\n${cash3} \n🛎：【${vendor3}】 [${items3}]項 ＄：${total3}\n🏠：${company3}${secondary3}${add3}\n📝：${si3}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
 
         $notify( no + "單" +dmode , "" , user1 +"\n" +user2 +"\n" +user3);
 } else if (no === 4 ) {
@@ -307,10 +307,10 @@ const cn1 = obj.route.deliveries[0].confirmation_number ;
         const si4 = obj.route.addresses[7].special_instructions === '' ? '無' : obj.route.addresses[7].special_instructions ;
         const place4 = "https://www.google.com/maps/search/?api=1&map_action=pano&query=" +obj.route.addresses[7].latitude +',' +obj.route.addresses[7].longitude ;
         
-        const user1 = `[${no}:1] [${status1}]${fra1}[${spa1}][${dtp1}]\n${cn1} (${von1}) [${distance1}]\n🗿${name1} (${pn1}) ${tip1}\n${cash1} \n🛎：【${vendor1}】 [${items1}]項 ＄：${total1}\n🏠：${company1}${secondary1}${add1}\n📝：${si1}\n${place1}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
-        const user2 = `[${no}:2] [${status2}]${fra2}[${spa2}][${dtp2}]\n${cn2} (${von2}) [${distance2}]\n🗿${name2} (${pn2}) ${tip2}\n${cash2} \n🛎：【${vendor2}】 [${items2}]項 ＄：${total2}\n🏠：${company2}${secondary2}${add2}\n📝：${si2}\n${place2}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
-        const user3 = `[${no}:3] [${status3}]${fra3}[${spa3}][${dtp3}]\n${cn3} (${von3}) [${distance3}]\n🗿${name3} (${pn3}) ${tip3}\n${cash3} \n🛎：【${vendor3}】 [${items3}]項 ＄：${total3}\n🏠：${company3}${secondary3}${add3}\n📝：${si3}\n${place3}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
-        const user4 = `[${no}:4] [${status4}]${fra4}[${spa4}][${dtp4}]\n${cn4} (${von4}) [${distance4}]\n🗿${name4} (${pn4}) ${tip4}\n${cash4} \n🛎：【${vendor4}】 [${items4}]項 ＄：${total4}\n🏠：${company4}${secondary4}${add4}\n📝：${si4}\n${place4}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
+        const user1 = `[${no}:1] [${status1}]${fra1}[${spa1}][${dtp1}]\n${place1}\n${cn1} (${von1}) [${distance1}]\n🗿${name1} (${pn1}) ${tip1}\n${cash1} \n🛎：【${vendor1}】 [${items1}]項 ＄：${total1}\n🏠：${company1}${secondary1}${add1}\n📝：${si1}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
+        const user2 = `[${no}:2] [${status2}]${fra2}[${spa2}][${dtp2}]\n${place2}\n${cn2} (${von2}) [${distance2}]\n🗿${name2} (${pn2}) ${tip2}\n${cash2} \n🛎：【${vendor2}】 [${items2}]項 ＄：${total2}\n🏠：${company2}${secondary2}${add2}\n📝：${si2}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
+        const user3 = `[${no}:3] [${status3}]${fra3}[${spa3}][${dtp3}]\n${place3}\n${cn3} (${von3}) [${distance3}]\n🗿${name3} (${pn3}) ${tip3}\n${cash3} \n🛎：【${vendor3}】 [${items3}]項 ＄：${total3}\n🏠：${company3}${secondary3}${add3}\n📝：${si3}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
+        const user4 = `[${no}:4] [${status4}]${fra4}[${spa4}][${dtp4}]\n${place4}\n${cn4} (${von4}) [${distance4}]\n🗿${name4} (${pn4}) ${tip4}\n${cash4} \n🛎：【${vendor4}】 [${items4}]項 ＄：${total4}\n🏠：${company4}${secondary4}${add4}\n📝：${si4}\n🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆` ;
         
                 $notify( no + "單" +dmode , "" , user1 +"\n" +user2 +"\n" +user3 +"\n" +user4);
 } else if (no === 5 ) {
