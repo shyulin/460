@@ -1,6 +1,6 @@
 
-/* confirmation50_number 英文編號 
-   60distance 距離 (越少越短)
+/* confirmation_number 英文編號 
+   distance 距離 (越少越短)
 
 */
    
